@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/autonomous_document_intelligence_agent/schemas/government_scheme.json",
+  "title": "Government Scheme Intelligence Extraction Schema",
+  "description": "Schema for extracting structured, evidence-grounded information from government welfare and scholarship scheme documents.",
+  "type": "object",
+  "properties": {
+    "document_metadata": {
+      "type": "object",
+      "description": "Metadata concerning the source document and extraction process.",
+      "properties": {
+        "document_id": {
+          "type": ["string", "null"],
+          "description": "Unique identifier for the ingested document."
+        },
+        "source_type": {
+          "type": ["string", "null"],
+          "description": "Format or source type of the document (e.g., PDF, HTML, OCR_PDF)."
+        },
+        "source_identifier": {
+          "type": ["string", "null"],
+          "description": "Source file path, URL, or document filename."
+        },
+        "extraction_timestamp": {
+          "type": ["string", "null"],
+          "description": "ISO 8601 timestamp when extraction was performed."
+        }
+      },
+      "additionalProperties": true
+    },
+    "scheme_name": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Official name of the government scheme or scholarship."
+    },
+    "scheme_type": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Classification of the scheme."
+    },
+    "implementing_authority": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Government ministry, department, or administrative agency responsible for implementing the scheme."
+    },
+    "target_beneficiaries": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Target demographic or group eligible for the scheme."
+    },
+    "education_level": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Required education level or enrollment status."
+    },
+    "age_criteria": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Age limits or age-based eligibility constraints."
+    },
+    "income_criteria": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Annual family income thresholds or financial status eligibility requirements."
+    },
+    "academic_criteria": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Academic performance criteria, marks percentage, or GPA requirements."
+    },
+    "category_criteria": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Social category, caste, or reservation criteria."
+    },
+    "domicile_criteria": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "State residency, regional domicile, or citizenship requirements."
+    },
+    "benefit_type": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Type of financial or material benefit provided."
+    },
+    "benefit_amount": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Monetary value, stipend rate, or financial assistance details."
+    },
+    "application_method": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Mode of application."
+    },
+    "application_url": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Official website link or portal URL for scheme application."
+    },
+    "required_documents": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "List of certificates, identity proofs, or documents required during application."
+    },
+    "application_deadline": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Closing date, last date for submission, or timeline for scheme applications."
+    },
+    "scheme_status": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Operational status of the scheme."
+    }
+  },
+  "required": [],
+  "additionalProperties": true,
+  "$defs": {
+    "Locator": {
+      "type": ["object", "null"],
+      "description": "Flexible location reference for document provenance.",
+      "properties": {
+        "page": {
+          "type": ["integer", "string", "null"],
+          "description": "Page number in a multi-page document."
+        },
+        "section": {
+          "type": ["string", "null"],
+          "description": "Section header or section title in the document."
+        },
+        "document_location": {
+          "type": ["string", "null"],
+          "description": "Specific document location, paragraph identifier, or snippet position."
+        },
+        "url": {
+          "type": ["string", "null"],
+          "description": "Web URL or DOM selector for HTML sources."
+        },
+        "source_reference": {
+          "type": ["string", "null"],
+          "description": "Equivalent source reference or file locator identifier."
+        }
+      },
+      "additionalProperties": true
+    },
+    "EvidenceItem": {
+      "type": "object",
+      "description": "Supporting evidence excerpt and source location citation.",
+      "properties": {
+        "text": {
+          "type": ["string", "null"],
+          "description": "Verbatim text snippet extracted from the source document supporting the field claim."
+        },
+        "locator": {
+          "$ref": "#/$defs/Locator"
+        }
+      },
+      "required": ["text", "locator"]
+    },
+    "EvidenceAwareField": {
+      "type": "object",
+      "description": "Consistent evidence-aware container for an extracted domain field.",
+      "properties": {
+        "value": {
+          "oneOf": [
+            { "type": "string" },
+            {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            { "type": "null" }
+          ],
+          "description": "Extracted field value (string, array of strings, or null if missing/not_found)."
+        },
+        "evidence": {
+          "type": "array",
+          "description": "List of supporting evidence items extracted from the source document.",
+          "items": {
+            "$ref": "#/$defs/EvidenceItem"
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score between 0.0 and 1.0 for the extracted claim."
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "unverified",
+            "uncertain",
+            "rejected",
+            "not_found"
+          ],
+          "description": "Verification status of the extracted field."
+        }
+      },
+      "required": [
+        "value",
+        "evidence",
+        "confidence",
+        "verification_status"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "verification_status": {
+                "enum": ["verified", "unverified", "uncertain"]
+              }
+            },
+            "required": ["verification_status"]
+          },
+          "then": {
+            "properties": {
+              "evidence": {
+                "minItems": 1
+              },
+              "value": {
+                "not": { "type": "null" }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "verification_status": {
+                "const": "not_found"
+              }
+            },
+            "required": ["verification_status"]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

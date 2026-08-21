@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs & temp files
+*.log
+tmp/
+
+# Data artifacts (ignore actual downloaded documents while preserving directory structure)
+data/government_schemes/documents/*
+!data/government_schemes/documents/.gitkeep
+data/opportunities/documents/*
+!data/opportunities/documents/.gitkeep
+evaluation/gold/*
+!evaluation/gold/.gitkeep

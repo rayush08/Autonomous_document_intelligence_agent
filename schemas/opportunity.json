@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/autonomous_document_intelligence_agent/schemas/opportunity.json",
+  "title": "Opportunity Intelligence Extraction Schema",
+  "description": "Schema for extracting structured, evidence-grounded information from scholarship, internship, fellowship, research opportunity, or research metadata documents.",
+  "type": "object",
+  "properties": {
+    "document_metadata": {
+      "type": "object",
+      "description": "Metadata concerning the source document and extraction process.",
+      "properties": {
+        "document_id": {
+          "type": ["string", "null"],
+          "description": "Unique identifier for the ingested document."
+        },
+        "source_type": {
+          "type": ["string", "null"],
+          "description": "Format or source type of the document (e.g., PDF, HTML, OCR_PDF)."
+        },
+        "source_identifier": {
+          "type": ["string", "null"],
+          "description": "Source file path, URL, or document filename."
+        },
+        "extraction_timestamp": {
+          "type": ["string", "null"],
+          "description": "ISO 8601 timestamp when extraction was performed."
+        }
+      },
+      "additionalProperties": true
+    },
+    "title": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Official title of the scholarship, internship, fellowship, or research opportunity."
+    },
+    "organization": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Name of the university, organization, institution, or foundation offering the opportunity."
+    },
+    "opportunity_type": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Classification of the opportunity."
+    },
+    "education_level": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Required education level or academic standing."
+    },
+    "eligible_disciplines": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Academic majors, fields of study, or subject disciplines eligible to apply."
+    },
+    "skills_required": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Technical skills, software proficiencies, or competencies requested for applicants."
+    },
+    "experience_required": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Prior work, research, or academic experience prerequisites."
+    },
+    "eligibility_notes": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Additional eligibility guidelines, restrictions, or special conditions."
+    },
+    "location": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Geographic location, city, country, or campus where the opportunity takes place."
+    },
+    "mode": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Work or study arrangement mode."
+    },
+    "duration": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Length or term of the opportunity."
+    },
+    "stipend_or_funding": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Financial support, monthly stipend, salary, or grant funding details."
+    },
+    "start_date": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Expected commencement date or program start timeline."
+    },
+    "application_deadline": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Closing date or deadline for submitting applications."
+    },
+    "application_url": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "Official application link, portal URL, or submission web page."
+    },
+    "required_documents": {
+      "$ref": "#/$defs/EvidenceAwareField",
+      "description": "List of application materials required."
+    }
+  },
+  "required": [],
+  "additionalProperties": true,
+  "$defs": {
+    "Locator": {
+      "type": ["object", "null"],
+      "description": "Flexible location reference for document provenance.",
+      "properties": {
+        "page": {
+          "type": ["integer", "string", "null"],
+          "description": "Page number in a multi-page document."
+        },
+        "section": {
+          "type": ["string", "null"],
+          "description": "Section header or section title in the document."
+        },
+        "document_location": {
+          "type": ["string", "null"],
+          "description": "Specific document location, paragraph identifier, or snippet position."
+        },
+        "url": {
+          "type": ["string", "null"],
+          "description": "Web URL or DOM selector for HTML sources."
+        },
+        "source_reference": {
+          "type": ["string", "null"],
+          "description": "Equivalent source reference or file locator identifier."
+        }
+      },
+      "additionalProperties": true
+    },
+    "EvidenceItem": {
+      "type": "object",
+      "description": "Supporting evidence excerpt and source location citation.",
+      "properties": {
+        "text": {
+          "type": ["string", "null"],
+          "description": "Verbatim text snippet extracted from the source document supporting the field claim."
+        },
+        "locator": {
+          "$ref": "#/$defs/Locator"
+        }
+      },
+      "required": ["text", "locator"]
+    },
+    "EvidenceAwareField": {
+      "type": "object",
+      "description": "Consistent evidence-aware container for an extracted domain field.",
+      "properties": {
+        "value": {
+          "oneOf": [
+            { "type": "string" },
+            {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            { "type": "null" }
+          ],
+          "description": "Extracted field value (string, array of strings, or null if missing/not_found)."
+        },
+        "evidence": {
+          "type": "array",
+          "description": "List of supporting evidence items extracted from the source document.",
+          "items": {
+            "$ref": "#/$defs/EvidenceItem"
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score between 0.0 and 1.0 for the extracted claim."
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "unverified",
+            "uncertain",
+            "rejected",
+            "not_found"
+          ],
+          "description": "Verification status of the extracted field."
+        }
+      },
+      "required": [
+        "value",
+        "evidence",
+        "confidence",
+        "verification_status"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "verification_status": {
+                "enum": ["verified", "unverified", "uncertain"]
+              }
+            },
+            "required": ["verification_status"]
+          },
+          "then": {
+            "properties": {
+              "evidence": {
+                "minItems": 1
+              },
+              "value": {
+                "not": { "type": "null" }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "verification_status": {
+                "const": "not_found"
+              }
+            },
+            "required": ["verification_status"]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
