@@ -1,0 +1,239 @@
+{
+  "document_id": "GOV-E-01",
+  "model_provider": "gemini-3-flash-preview",
+  "timestamp": "2026-08-28T02:21:00.449495",
+  "schema_valid": true,
+  "audit_results": {
+    "total_fields": 17,
+    "verified_fields": 16,
+    "not_found_fields": 1
+  },
+  "extracted_record": {
+    "scheme_name": {
+      "value": "Post-Matric Scholarship for SC students",
+      "evidence": [
+        {
+          "text": "SCHEME NAME: Post-Matric Scholarship for SC students",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec1"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "implementing_authority": {
+      "value": "Ministry Of Social Justice and Empowerment",
+      "evidence": [
+        {
+          "text": "IMPLEMENTING AUTHORITY: Ministry Of Social Justice and Empowerment",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_type": {
+      "value": "Education & Learning",
+      "evidence": [
+        {
+          "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "target_beneficiaries": {
+      "value": "Scheduled Caste (SC) students, especially those from the poorest households",
+      "evidence": [
+        {
+          "text": "aims to increase the Gross Enrolment Ratio of SC students in higher education, especially those from the poorest households",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec4"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "education_level": {
+      "value": "Post-matriculation or post-secondary level",
+      "evidence": [
+        {
+          "text": "enabling them to continue and complete their education at the post-matriculation or post-secondary level",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "age_criteria": {
+      "value": "Decided by the concerned institutions",
+      "evidence": [
+        {
+          "text": "The ceiling on age limit for admission as a regular student in different classes should be decided by the concerned institutions.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "income_criteria": {
+      "value": "Parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum",
+      "evidence": [
+        {
+          "text": "Scholarships will be paid to students whose parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "academic_criteria": {
+      "value": "Passed Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education",
+      "evidence": [
+        {
+          "text": "Only candidates who belong to Scheduled Castes and have passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education are eligible.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "category_criteria": {
+      "value": "Scheduled Castes (SC)",
+      "evidence": [
+        {
+          "text": "Only candidates who belong to Scheduled Castes",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "domicile_criteria": {
+      "value": "Resident/domiciled in the State/UT to which the applicant actually belongs",
+      "evidence": [
+        {
+          "text": "the State/UT in which permanently settled or domiciled, as per the terms of domicile decided by the State",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec4"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefit_type": {
+      "value": "Financial assistance / Scholarship",
+      "evidence": [
+        {
+          "text": "providing financial assistance to students from economically weaker families",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefit_amount": {
+      "value": "Annual allowances ranging from ₹ 2,500 to ₹ 13,000 depending on course group (I-IV) and status (Hosteller/Day Scholar); 10% extra for Divyang students",
+      "evidence": [
+        {
+          "text": "Category Of Courses Hostellers (Yearly) Day Scholars ( Yearly) Group-1 Degree and post Graduate Level professional courses ₹ 13,000/- ₹ 7,000/-",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec6"
+          }
+        },
+        {
+          "text": "Ten percent extra allowances shall be provided for Divyang students.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec6"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_method": {
+      "value": "Online through the National Scholarship Portal (NSP)",
+      "evidence": [
+        {
+          "text": "Applicant must register them self on NSP portal.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_url": {
+      "value": "https://scholarships.gov.in/",
+      "evidence": [
+        {
+          "text": "URL :https://scholarships.gov.in/",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_deadline": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "scheme_status": {
+      "value": "Active",
+      "evidence": [
+        {
+          "text": "This is applicable to all the students who are currently beneficiaries of the scheme as well as fresh admissions.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec4"
+          }
+        }
+      ],
+      "confidence": 0.9,
+      "verification_status": "verified"
+    },
+    "required_documents": {
+      "value": "Photograph, Academic Certificate, Caste Certificate, Income proof, Domicile Certificate, Bank Account Details, Aadhaar Card",
+      "evidence": [
+        {
+          "text": "1. Photograph. 2. Academic Certificate. 3. Caste Certificate. 4. Income proof. 5. Domicile Certificate. 6. Bank Account Details. 7. Aadhaar Card.",
+          "locator": {
+            "chunk_id": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "document_metadata": {
+      "document_id": "GOV-E-01",
+      "source_type": "HTML",
+      "source_identifier": "https://myscheme.gov.in/schemes/pm-pms-sc",
+      "extraction_timestamp": "2026-08-28T02:21:00.403339"
+    }
+  }
+}

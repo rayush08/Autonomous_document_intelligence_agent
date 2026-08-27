@@ -1,0 +1,239 @@
+{
+  "document_metadata": {
+    "document_id": "GOV-M-02",
+    "source_type": "HTML",
+    "source_identifier": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+    "extraction_timestamp": "2026-08-25T23:00:00Z"
+  },
+  "scheme_name": {
+    "value": "PM-YASASVI: Top Class College Education for OBC EBC and DNT Students",
+    "evidence": [
+      {
+        "text": "PM-YASASVI Top Class College Education for OBC, EBC and DNT Students",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Header"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "scheme_type": {
+    "value": "Central Sector Scholarship Scheme",
+    "evidence": [
+      {
+        "text": "Top Class College Education Scholarship Scheme",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Details"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "implementing_authority": {
+    "value": "Ministry of Social Justice and Empowerment, Government of India",
+    "evidence": [
+      {
+        "text": "Department of Social Justice & Empowerment, MoSJE",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Details"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "target_beneficiaries": {
+    "value": "OBC, EBC, and DNT students admitted to notified Top Class Higher Education Institutions",
+    "evidence": [
+      {
+        "text": "Students belonging to OBC, EBC and DNT categories studying in notified top class institutions",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "education_level": {
+    "value": "Full-time Degree / Diploma course in notified Top Class Educational Institutions",
+    "evidence": [
+      {
+        "text": "Full time degree/diploma course in notified top class institutions (IITs, NITs, IIMs, AIIMS, NLU, etc.)",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "age_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "income_criteria": {
+    "value": "Total annual family income from all sources must not exceed Rs. 2.50 Lakh per annum",
+    "evidence": [
+      {
+        "text": "Annual family income from all sources does not exceed Rs. 2.50 Lakh",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "academic_criteria": {
+    "value": "Admitted to notified top class institution as per full-time course admission norms",
+    "evidence": [
+      {
+        "text": "Admitted into notified top class institution",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "category_criteria": {
+    "value": [
+      "Other Backward Classes (OBC)",
+      "Economically Backward Classes (EBC)",
+      "De-notified, Nomadic and Semi-Nomadic Tribes (DNT)",
+      "30% slot reservation for female students"
+    ],
+    "evidence": [
+      {
+        "text": "OBC, EBC, and DNT categories with 30% slots reserved for girl students",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "domicile_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "benefit_type": {
+    "value": "4-Component Full Financial Assistance Package",
+    "evidence": [
+      {
+        "text": "4-component package covering tuition fee, living expenses, books allowance, and computer purchase",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Benefits"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "benefit_amount": {
+    "value": [
+      "Full tuition fee and non-refundable charges up to Rs. 2.00 Lakh per annum for private institutions (actual fee for government institutions)",
+      "Living expenses of Rs. 3,000 per month (Rs. 36,000 per annum)",
+      "Books and stationery allowance of Rs. 5,000 per annum",
+      "One-time assistance of Rs. 45,000 for computer/laptop with accessories"
+    ],
+    "evidence": [
+      {
+        "text": "Tuition fee up to Rs. 2.00 Lakh/year, Living expenses Rs. 3,000/month, Books Rs. 5,000/year, Computer Rs. 45,000 one-time",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Benefits"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_method": {
+    "value": "Online application through National Scholarship Portal (NSP)",
+    "evidence": [
+      {
+        "text": "Apply online through National Scholarship Portal",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Application Process"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_url": {
+    "value": "https://scholarships.gov.in",
+    "evidence": [
+      {
+        "text": "https://scholarships.gov.in",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Application Process"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "required_documents": {
+    "value": [
+      "Caste / Category Certificate (OBC/EBC/DNT)",
+      "Annual Family Income Certificate",
+      "Class 10 and Class 12 Marksheets",
+      "Institute Admission Letter and Fee Receipt",
+      "Aadhaar Card",
+      "Bank Account Details"
+    ],
+    "evidence": [
+      {
+        "text": "Category Certificate, Income Certificate, Academic Marksheets, Admission Letter, Aadhaar, Bank Details",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Documents Required"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_deadline": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "scheme_status": {
+    "value": "Active",
+    "evidence": [
+      {
+        "text": "Active / Open",
+        "locator": {
+          "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "section": "Header"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  }
+}

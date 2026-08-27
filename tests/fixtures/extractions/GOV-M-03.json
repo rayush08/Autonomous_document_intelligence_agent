@@ -1,0 +1,236 @@
+{
+  "document_metadata": {
+    "document_id": "GOV-M-03",
+    "source_type": "PDF",
+    "source_identifier": "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2023/10/20231005812894382.pdf",
+    "extraction_timestamp": "2026-08-25T23:00:00Z"
+  },
+  "scheme_name": {
+    "value": "National Bioenergy Programme - Biomass Programme (Phase-I)",
+    "evidence": [
+      {
+        "text": "Administrative approval for implementation of Biomass Programme under the Umbrella scheme of National Bioenergy Programme for duration of FY 2021-22 to 2025-26 (Phase-I)",
+        "locator": {
+          "page": 1,
+          "section": "Subject"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "scheme_type": {
+    "value": "Central Sector Umbrella Scheme / Financial Assistance Support Grant",
+    "evidence": [
+      {
+        "text": "implementation of the National Bioenergy Programme for a period of 01.04.2021 to 31.03.2026 with the outlay of Rs.858 crore under Phase-I",
+        "locator": {
+          "page": 1,
+          "section": "Section 1"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "implementing_authority": {
+    "value": "Ministry of New and Renewable Energy (Biomass Division), Government of India",
+    "evidence": [
+      {
+        "text": "Government of India Ministry of New and Renewable Energy (Biomass Division) Atal Akshay Urja Bhawan, Lodhi Road, New Delhi-110 003",
+        "locator": {
+          "page": 1,
+          "section": "Header"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "target_beneficiaries": {
+    "value": "Project Developers, Manufacturers, Industrial Units setting up Biomass Pellet/Briquette manufacturing plants or Biomass Cogeneration (non-bagasse) projects",
+    "evidence": [
+      {
+        "text": "Central Financial Assistance (CFA) under Biomass Programme for setting up of Biomass pellet/briquette manufacturing plants and Biomass cogeneration (non-bagasse) projects",
+        "locator": {
+          "page": 2,
+          "section": "Section 3"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "education_level": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "income_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "age_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "academic_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "category_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "domicile_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "benefit_type": {
+    "value": "Central Financial Assistance (CFA) Capital Support Grant",
+    "evidence": [
+      {
+        "text": "Central Financial Assistance (CFA) under Biomass Programme for setting up of Biomass pellet/briquette manufacturing plants and Biomass cogeneration (non-bagasse) projects is given at Table 1.",
+        "locator": {
+          "page": 2,
+          "section": "Section 3"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "benefit_amount": {
+    "value": [
+      "Pellet Manufacturing Plants: Rs. 3.00 Lakh per MTPH capacity (Max CFA Rs. 45.00 Lakh per project)",
+      "Briquette Manufacturing Plants: Rs. 1.50 Lakh per MTPH capacity (Max CFA Rs. 15.00 Lakh per project)",
+      "Biomass (Non-bagasse) Cogeneration: Rs. 40.00 Lakh per MW for power / Rs. 4.00 Lakh per MTPH steam (Max CFA Rs. 5.00 Crore per project)"
+    ],
+    "evidence": [
+      {
+        "text": "Pellet manufacturing plants: Rs. 3.00 Lakh / MTPH of capacity (Max CFA Rs. 45.00 Lakh per project)",
+        "locator": {
+          "page": 2,
+          "section": "Table 1"
+        }
+      },
+      {
+        "text": "Briquette manufacturing plants: Rs. 1.50 Lakh / MTPH of capacity (Max CFA Rs. 15.00 Lakh per project)",
+        "locator": {
+          "page": 3,
+          "section": "Table 1"
+        }
+      },
+      {
+        "text": "Biomass (non-bagasse) Cogeneration: Rs. 40.00 Lakh / MW for power generation / Rs. 4.00 Lakh / MTPH for steam generation (Max CFA Rs. 5.00 Crore per project)",
+        "locator": {
+          "page": 3,
+          "section": "Table 1"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_method": {
+    "value": "Online submission through BioURJA Portal",
+    "evidence": [
+      {
+        "text": "The proposal for availing CFA should be submitted through BioURJA Portal (www.biourja.mnre.gov.in) before commissioning of the plant",
+        "locator": {
+          "page": 4,
+          "section": "Clause 4.1(i)"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_url": {
+    "value": "www.biourja.mnre.gov.in",
+    "evidence": [
+      {
+        "text": "(www.biourja.mnre.gov.in)",
+        "locator": {
+          "page": 4,
+          "section": "Clause 4.1(i)"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "required_documents": {
+    "value": [
+      "Forwarding letter from developer/Lead FI/Bank (Annexure-II)",
+      "Copy of Detailed Project Report (DPR) / Feasibility Report (Annexure-III)",
+      "Copy of loan sanction letter (if bank financed)",
+      "Techno-economic Feasibility Report",
+      "Latest high-resolution site photographs with timestamp",
+      "Duly notarized undertaking on Rs. 500 stamp paper (Annexure-V)",
+      "Performance Inspection Report (Annexure-VI)",
+      "CA Certificate detailing total project cost and source of funds",
+      "Consent to Operate from State Pollution Control Board",
+      "EIA clearance (where applicable)",
+      "Contract agreement for sale of briquettes/pellets for minimum 2 years",
+      "SCADA / remote monitoring system details"
+    ],
+    "evidence": [
+      {
+        "text": "Part A: List of documents required for in-principle approval of proposals (Annexure-I Part A)",
+        "locator": {
+          "page": 11,
+          "section": "Annexure-I Part A"
+        }
+      },
+      {
+        "text": "Part B: List of documents required for release of CFA (Annexure-I Part B)",
+        "locator": {
+          "page": 11,
+          "section": "Annexure-I Part B"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_deadline": {
+    "value": "31.12.2025",
+    "evidence": [
+      {
+        "text": "The last date for submitting the applications under these guidelines shall be 31.12.2025.",
+        "locator": {
+          "page": 4,
+          "section": "Clause 4.1(i)"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "scheme_status": {
+    "value": "Sanctioned for implementation from 01.04.2021 to 31.03.2026 (Application submission deadline: 31.12.2025)",
+    "evidence": [
+      {
+        "text": "implementation of the National Bioenergy Programme for a period of 01.04.2021 to 31.03.2026",
+        "locator": {
+          "page": 1,
+          "section": "Section 1"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  }
+}

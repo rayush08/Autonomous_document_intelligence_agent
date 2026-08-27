@@ -1,0 +1,298 @@
+{
+  "document_id": "GOV-E-01",
+  "model_provider": "gemini-flash-lite-latest",
+  "timestamp": "2026-08-28T02:50:37.451398",
+  "schema_valid": true,
+  "audit_results": {
+    "total_fields": 17,
+    "verified_fields": 13,
+    "not_found_fields": 17
+  },
+  "extracted_record": {
+    "scheme_name": {
+      "value": "Post-Matric Scholarship for SC students",
+      "evidence": [
+        {
+          "text": "SCHEME NAME: Post-Matric Scholarship for SC students",
+          "locator": {
+            "section": "GOV-E-01-sec1"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "implementing_authority": {
+      "value": "Ministry Of Social Justice and Empowerment",
+      "evidence": [
+        {
+          "text": "IMPLEMENTING AUTHORITY: Ministry Of Social Justice and Empowerment",
+          "locator": {
+            "section": "GOV-E-01-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_category_or_type": {
+      "value": "Education & Learning",
+      "evidence": [
+        {
+          "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+          "locator": "GOV-E-01-sec2"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "brief_description": {
+      "value": "The objective of the scheme is to increase the Gross Enrolment Ratio of SC students in higher education by providing financial assistance to students from economically weaker families at the post-matriculation or post-secondary level, enabling them to continue and complete their education.",
+      "evidence": [
+        {
+          "text": "The objective of the scheme is to increase the Gross Enrolment Ratio of SC students in higher education by providing financial assistance to students from economically weaker families at the post-matriculation or post-secondary level, enabling them to continue and complete their education.",
+          "locator": "GOV-E-01-sec3"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "detailed_description": {
+      "value": "The scheme Post-Matric Scholarship for SC Students under the Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment, aims to increase the Gross Enrolment Ratio of SC students in higher education, especially those from the poorest households, by providing financial assistance at the post-matriculation or post-secondary stage to help them continue and complete their education.",
+      "evidence": [
+        {
+          "text": "The scheme Post-Matric Scholarship for SC Students under the Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment, aims to increase the Gross Enrolment Ratio of SC students in higher education, especially those from the poorest households, by providing financial assistance at the post-matriculation or post-secondary stage to help them continue and complete their education.",
+          "locator": "GOV-E-01-sec4"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "eligibility_criteria": {
+      "value": "Indian nationals only, belonging to Scheduled Castes, passed Matriculation/Higher Secondary or higher examination, parents'/guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+      "evidence": [
+        {
+          "text": "The scholarships are open to Indian nationals only.",
+          "locator": "GOV-E-01-sec5"
+        },
+        {
+          "text": "Only candidates who belong to Scheduled Castes and have passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education are eligible.",
+          "locator": "GOV-E-01-sec5"
+        },
+        {
+          "text": "Scholarships will be paid to students whose parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+          "locator": "GOV-E-01-sec5"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefits_and_financial_assistance": {
+      "value": "Financial assistance ranging from ₹ 2,500/- to ₹ 13,000/- yearly depending on the course group and whether the student is a hosteller or day scholar. Ten percent extra allowances for Divyang students.",
+      "evidence": [
+        {
+          "text": "Group-1 Degree and post Graduate Level professional courses: Hostellers ₹ 13,000/-, Day Scholars ₹ 7,000/-",
+          "locator": "GOV-E-01-sec6"
+        },
+        {
+          "text": "Note 1. Ten percent extra allowances shall be provided for Divyang students.",
+          "locator": "GOV-E-01-sec6"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "exclusions": {
+      "value": "Candidates studying in the same stage of education in a different subject after passing one stage of education are not eligible. A scholarship holder will not hold any other scholarship or stipend.",
+      "evidence": [
+        {
+          "text": "Candidates who are studying in the same stage of education in a different subject after passing one stage of education are not eligible.",
+          "locator": "GOV-E-01-sec5"
+        },
+        {
+          "text": "A scholarship holder under this scheme will not hold any other scholarship or stipend.",
+          "locator": "GOV-E-01-sec5"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "required_documents": {
+      "value": [
+        "Photograph",
+        "Academic Certificate",
+        "Caste Certificate",
+        "Income proof",
+        "Domicile Certificate",
+        "Bank Account Details",
+        "Aadhaar Card"
+      ],
+      "evidence": [
+        {
+          "text": "Photograph. Academic Certificate. Caste Certificate. Income proof. Domicile Certificate. Bank Account Details. Aadhaar Card.",
+          "locator": {
+            "section": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_process": {
+      "value": "Applicant must register themselves on the NSP portal, login with their credentials and apply.",
+      "evidence": [
+        {
+          "text": "1. Applicant must register them self on NSP portal.\n2. Login with their credentials and apply.",
+          "locator": "GOV-E-01-sec8"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_deadline": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "renewal_process": {
+      "value": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "verification_status": "not_found"
+    },
+    "faqs": {
+      "value": "Q1: What is this scheme? A1: The Post-Matric Scholarship Scheme for Scheduled Caste (SC) Students is a Centrally Sponsored Scheme implemented by the Ministry of Social Justice and Empowerment, Government of India.",
+      "evidence": [
+        {
+          "text": "Q1: What is this scheme ?\nA1: type: paragraph\nchildren: text: The Post-Matric Scholarship Scheme for Scheduled Caste (SC) Students is a Centrally Sponsored Scheme implemented by the Ministry of Social Justice and Empowerment, Government of India.",
+          "locator": "GOV-E-01-sec8"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "grievance_redressal": {
+      "value": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "verification_status": "not_found"
+    },
+    "official_links_and_portals": {
+      "value": "https://scholarships.gov.in/",
+      "evidence": [
+        {
+          "text": "URL :https://scholarships.gov.in/",
+          "locator": "GOV-E-01-sec8"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "monitoring_and_audit": {
+      "value": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "verification_status": "not_found"
+    },
+    "additional_information": {
+      "value": "Courses are categorized into four groups (Group I, II, III, IV). Students pursuing C.A./I.C.W.A./C.S./I.C.F.A. shall be treated as day scholars for academic allowance. Students studying through correspondence/online courses are not eligible for academic allowance.",
+      "evidence": [
+        {
+          "text": "The Post-Matric Scholarship Scheme for SC Students categorizes courses into four groups",
+          "locator": "GOV-E-01-sec4"
+        },
+        {
+          "text": "Students pursuing C.A. /I.C.W.A. /C.S. /I.C.F.A. shall be treated as day scholars for the purpose of academic allowance. Students studying through correspondence/online courses shall not be eligible for academic allowance.",
+          "locator": "GOV-E-01-sec6"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "document_metadata": {
+      "document_id": "GOV-E-01",
+      "source_type": "HTML",
+      "source_identifier": "https://myscheme.gov.in/schemes/pm-pms-sc",
+      "extraction_timestamp": "2026-08-28T02:50:37.426575"
+    },
+    "scheme_type": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "target_beneficiaries": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "education_level": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "age_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "income_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "academic_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "category_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "domicile_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "benefit_type": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "benefit_amount": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "application_method": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "application_url": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "scheme_status": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    }
+  }
+}

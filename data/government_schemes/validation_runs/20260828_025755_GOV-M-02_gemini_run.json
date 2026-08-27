@@ -1,0 +1,257 @@
+{
+  "document_id": "GOV-M-02",
+  "model_provider": "gemini-flash-lite-latest",
+  "timestamp": "2026-08-28T02:57:55.720193",
+  "schema_valid": true,
+  "audit_results": {
+    "total_fields": 17,
+    "benefit_components_count": 4
+  },
+  "extracted_record": {
+    "scheme_name": {
+      "value": "PM-YASASVI: Top Class College Education for OBC, EBC and DNT Students",
+      "evidence": [
+        {
+          "text": "SCHEME NAME: PM-YASASVI: Top Class College Education for OBC, EBC and DNT Students",
+          "locator": {
+            "section": "GOV-M-02-sec1"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_type": {
+      "value": "Education & Learning",
+      "evidence": [
+        {
+          "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+          "locator": {
+            "section": "GOV-M-02-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "implementing_authority": {
+      "value": "Ministry Of Social Justice and Empowerment",
+      "evidence": [
+        {
+          "text": "IMPLEMENTING AUTHORITY: Ministry Of Social Justice and Empowerment",
+          "locator": {
+            "section": "GOV-M-02-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "target_beneficiaries": {
+      "value": "Students belonging to OBC, EBC and DNT categories",
+      "evidence": [
+        {
+          "text": "The objective of the scheme is to recognize and promote quality education amongst Students belonging to OBC, EBC and DNT categories by providing full financial support.",
+          "locator": {
+            "section": "GOV-M-02-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "education_level": {
+      "value": "Studies beyond Class XII",
+      "evidence": [
+        {
+          "text": "The Scheme will cover OBC/EBC/DNT students for pursuing studies beyond Class XII.",
+          "locator": {
+            "section": "GOV-M-02-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "age_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "income_criteria": {
+      "value": "Total annual family income from all sources up to ₹2.50 lakhs",
+      "evidence": [
+        {
+          "text": "Those OBC/EBC/DNT students having total annual family income from all sources up to ₹2.50 lakhs and have secured admission in a full-time prescribed course",
+          "locator": {
+            "section": "GOV-M-02-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "academic_criteria": {
+      "value": "Secured admission in a full-time prescribed course in any of the notified institutions according to the general selection criteria prescribed by the concerned institution",
+      "evidence": [
+        {
+          "text": "secured admission in a full-time prescribed course in any of the notified institutions according to the general selection criteria prescribed by the concerned institution",
+          "locator": {
+            "section": "GOV-M-02-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "category_criteria": {
+      "value": [
+        "OBC",
+        "EBC",
+        "DNT"
+      ],
+      "evidence": [
+        {
+          "text": "The objective of the scheme is to recognize and promote quality education amongst Students belonging to OBC, EBC and DNT categories",
+          "locator": {
+            "section": "GOV-M-02-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "domicile_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "benefit_type": {
+      "value": "Full financial support including tuition fee, living expenses, books & stationery, and laptop assistance",
+      "evidence": [
+        {
+          "text": "The objective of the scheme is to recognize and promote quality education amongst Students belonging to OBC, EBC and DNT categories by providing full financial support.",
+          "locator": {
+            "section": "GOV-M-02-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefit_amount": {
+      "value": [
+        "Full tuition fee and non-refundable charges (ceiling of ₹2.00 lakhs per annum per student for private sector institutions and ₹3.72 lakhs per annum per student for private sector flying clubs)",
+        "Living expenses @₹3,000/- per month per student",
+        "Books and stationery @ ₹5,000/- per annum per student",
+        "Latest computer/laptop with accessories limited to ₹45,000/- per student as one-time assistance"
+      ],
+      "evidence": [
+        {
+          "text": "Full tuition fee and non-refundable charges (there will be a ceiling of ₹2.00 lakhs per annum per student for private sector institutions and ₹3.72 lakhs per annum per student for the private sector flying clubs for Commercial Pilot Training and Type Rating Courses)",
+          "locator": {
+            "section": "GOV-M-02-sec6"
+          }
+        },
+        {
+          "text": "Living expenses to the beneficiary @₹3,000/-per month per student",
+          "locator": {
+            "section": "GOV-M-02-sec6"
+          }
+        },
+        {
+          "text": "Books and stationery @ ₹5,000/- per annum per student",
+          "locator": {
+            "section": "GOV-M-02-sec6"
+          }
+        },
+        {
+          "text": "A latest computer/laptop of a reputed brand with accessories like UPS and printer limited to ₹45,000/- per student as one-time assistance during the course.",
+          "locator": {
+            "section": "GOV-M-02-sec6"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_method": {
+      "value": "Online through National Scholarship Portal (NSP)",
+      "evidence": [
+        {
+          "text": "The students will submit their application on National Scholarship Portal (NSP). https://scholarships.gov.in/",
+          "locator": {
+            "section": "GOV-M-02-sec7"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_url": {
+      "value": "https://scholarships.gov.in/",
+      "evidence": [
+        {
+          "text": "https://scholarships.gov.in/",
+          "locator": {
+            "section": "GOV-M-02-sec7"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "required_documents": {
+      "value": [
+        "Aadhaar Card",
+        "Passport size photograph",
+        "Educational qualification marksheets/certificates",
+        "Valid Income certificate issued by the competent Authority",
+        "Domicile Certificate",
+        "Caste/Community Certificate issued by the competent authority",
+        "Disability certificate, if applicable",
+        "Bank Account details",
+        "Admission Rank Proof",
+        "Proof of fee details to claim the scholarship",
+        "Any other documents as required"
+      ],
+      "evidence": [
+        {
+          "text": "1. Aadhaar Card\n2. Passport size photograph\n3. Educational qualification marksheets/certificates\n4. Valid Income certificate issued by the competent Authority\n5. Domicile Certificate\n6. Caste/Community Certificate issued by the competent authority\n7. Disability certificate, if applicable\n8. Bank Account details\n9. Admission Rank Proof \n10. Proof of fee details to claim the scholarship\n11. Any other documents as required",
+          "locator": {
+            "section": "GOV-M-02-sec7"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_deadline": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "scheme_status": {
+      "value": "active",
+      "evidence": [
+        {
+          "text": "The Scheme will operate in all the institutions notified by the Ministry of Social Justice and Empowerment for every financial year 2021-22 onwards.",
+          "locator": {
+            "section": "GOV-M-02-sec4"
+          }
+        }
+      ],
+      "confidence": 0.9,
+      "verification_status": "verified"
+    },
+    "document_metadata": {
+      "document_id": "GOV-M-02",
+      "source_type": "HTML",
+      "source_identifier": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+      "extraction_timestamp": "2026-08-28T02:57:55.671217"
+    }
+  }
+}

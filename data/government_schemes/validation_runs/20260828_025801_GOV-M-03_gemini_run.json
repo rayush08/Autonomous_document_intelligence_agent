@@ -1,0 +1,210 @@
+{
+  "document_id": "GOV-M-03",
+  "model_provider": "gemini-flash-lite-latest",
+  "timestamp": "2026-08-28T02:58:01.360899",
+  "schema_valid": true,
+  "audit_results": {
+    "total_fields": 17,
+    "pdf_page_range_valid": true
+  },
+  "extracted_record": {
+    "scheme_name": {
+      "value": "National Bioenergy Programme (Phase-I) - Biomass Programme",
+      "evidence": [
+        {
+          "text": "Administrative approval for implementation of Biomass Programme under the Umbrella scheme of National Bioenergy Programme for duration of FY 2021-22 to 2025-26 (Phase-I)- Reg.",
+          "locator": {
+            "section": "GOV-M-03-p1-c1",
+            "page": 1
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_type": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "implementing_authority": {
+      "value": "Indian Renewable Energy Development Agency Limited (IREDA) and Ministry of New and Renewable Energy (MNRE)",
+      "evidence": [
+        {
+          "text": "Indian Renewable Energy Development Agency Limited (IREDA) shall be the implementing agency for implementation of the Biomass programm e.",
+          "locator": {
+            "section": "GOV-M-03-p2-c1",
+            "page": 2
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "target_beneficiaries": {
+      "value": "Companies registered under the Companies Act, Partnership Firms, Proprietorship Firms, Cooperatives, Public Sector Companies, Government owned Firms",
+      "evidence": [
+        {
+          "text": "Companies registered under the Companies Act, Partnership Firms, Proprietorship Firms, Cooperatives, Public Sector Companies, Government owned Firms are eligible for financial support under the scheme.",
+          "locator": {
+            "section": "GOV-M-03-p6-c1",
+            "page": 6
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "education_level": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "age_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "income_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "academic_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "category_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "domicile_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "benefit_type": {
+      "value": "Central Financial Assistance (CFA) subsidy",
+      "evidence": [
+        {
+          "text": "The programme provides Central Financial Assistance (CFA) to project developers",
+          "locator": {
+            "section": "GOV-M-03-p5-c1",
+            "page": 5
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefit_amount": {
+      "value": [
+        "Rs. 9 Lakh per MTPH (metric ton/hour) manufacturing capacity (maximum CFA of Rs 45 Lakhs per plant) for Briquette / Pellet Manufacturing plants",
+        "Rs. 40 Lakhs/MW (on Installed Capacity) (maximum CFA of Rs. 5 Crores per project) for Biomass (Non-bagasse) cogeneration projects"
+      ],
+      "evidence": [
+        {
+          "text": "Sr No Project Type CFA \n1 Briquette / Pellet Manufacturing plants Rs. 9 Lakh per MTPH ( metric t on/hour) manufacturing capacity (maximum CFA of Rs 45 Lakhs per plant) \n2 Biomass (Non-bagasse ) cogeneration projects Rs. 40 Lakhs/MW (on Installed Capacity) (maximum CFA of Rs. 5 Crores per project)",
+          "locator": {
+            "section": "GOV-M-03-p5-c1",
+            "page": 1
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_method": {
+      "value": "Online via BioURJA Portal",
+      "evidence": [
+        {
+          "text": "The proposal for availing CFA should be submitted through BioURJA Portal (www.biourja.mnre.gov.in) before commissioning of the plant",
+          "locator": {
+            "section": "GOV-M-03-p7-c1",
+            "page": 5
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_url": {
+      "value": "www.biourja.mnre.gov.in",
+      "evidence": [
+        {
+          "text": "The proposal for availing CFA should be submitted through BioURJA Portal (www.biourja.mnre.gov.in)",
+          "locator": {
+            "section": "GOV-M-03-p7-c1",
+            "page": 5
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "required_documents": {
+      "value": [
+        "Forwarding letter from developer in case of self-financed projects or Lead FI/Bank in case of projects availing debt financing/loans",
+        "Copy of DPR / Feasibility Report / Project Report",
+        "Copy of loan sanction letter (in case of project financed by FI(s)/bank(s))",
+        "Techno-economic Feasibility Report",
+        "Latest high resolution photographs of site (with time stamp)",
+        "Duly notarized undertaking in original (on a non-judicial stamp paper of Rs. 500)"
+      ],
+      "evidence": [
+        {
+          "text": "a. Forwarding letter from developer in c ase of self -financed projects... b. Copy of DPR /Feasibility Report/ Project Report... c. Copy of loan sanction letter... d. Techno-economic Feasibility Report... e. Latest high resolution photographs of site (with time stamp)... f. Duly notarized undertaking in original (on a non -judicial stamp paper of Rs. 500)",
+          "locator": {
+            "section": "GOV-M-03-p14-c1",
+            "page": 6
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_deadline": {
+      "value": "31.12.2025",
+      "evidence": [
+        {
+          "text": "The last date for submitting the applications under these guidelines shall be 31.12.2025.",
+          "locator": {
+            "section": "GOV-M-03-p7-c1",
+            "page": 7
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_status": {
+      "value": "active",
+      "evidence": [
+        {
+          "text": "Administrative approval for implementation of Biomass Programme under the Umbrella scheme of National Bioenergy Programme for duration of FY 2021-22 to 2025-26 (Phase-I)- Reg.",
+          "locator": {
+            "section": "GOV-M-03-p1-c1",
+            "page": 1
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "document_metadata": {
+      "document_id": "GOV-M-03",
+      "source_type": "PDF",
+      "source_identifier": "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2023/10/20231005812894382.pdf",
+      "extraction_timestamp": "2026-08-28T02:58:01.315291"
+    }
+  }
+}

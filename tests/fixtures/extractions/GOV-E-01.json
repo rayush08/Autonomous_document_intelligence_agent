@@ -1,0 +1,236 @@
+{
+  "document_metadata": {
+    "document_id": "GOV-E-01",
+    "source_type": "HTML",
+    "source_identifier": "https://myscheme.gov.in/schemes/pm-pms-sc",
+    "extraction_timestamp": "2026-08-25T23:00:00Z"
+  },
+  "scheme_name": {
+    "value": "Post-Matric Scholarship for SC Students (PM-PMS-SC)",
+    "evidence": [
+      {
+        "text": "Post-Matric Scholarship for SC Students",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Header"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "scheme_type": {
+    "value": "Centrally Sponsored Scheme / Post-Matric Scholarship",
+    "evidence": [
+      {
+        "text": "Centrally Sponsored Scheme for SC Students",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Details"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "implementing_authority": {
+    "value": "Ministry of Social Justice and Empowerment, Government of India",
+    "evidence": [
+      {
+        "text": "Ministry of Social Justice and Empowerment",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Details"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "target_beneficiaries": {
+    "value": "Students belonging to Scheduled Castes (SC) pursuing post-matriculation courses",
+    "evidence": [
+      {
+        "text": "Students belonging to Scheduled Castes studying at post-matriculation or post-secondary stage",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "education_level": {
+    "value": "Post-Matriculation / Post-Secondary (Class 11 to Post-Graduation / Ph.D.)",
+    "evidence": [
+      {
+        "text": "Post-Matriculation or Post-Secondary stage in recognized institutions",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "age_criteria": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "income_criteria": {
+    "value": "Annual family income from all sources must not exceed Rs. 2,50,000 per annum",
+    "evidence": [
+      {
+        "text": "Total annual family income of parents/guardians from all sources does not exceed Rs. 2.50 Lakh",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "academic_criteria": {
+    "value": "Must have passed Class 10 / Matriculation or equivalent examination",
+    "evidence": [
+      {
+        "text": "Must have passed Matriculation or Higher Secondary examination",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "category_criteria": {
+    "value": "Scheduled Caste (SC)",
+    "evidence": [
+      {
+        "text": "Belonging to Scheduled Castes community",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "domicile_criteria": {
+    "value": "Indian Citizen domiciled in the respective State / UT",
+    "evidence": [
+      {
+        "text": "Resident of the state/UT to which the applicant belongs",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Eligibility"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "benefit_type": {
+    "value": "Compulsory non-refundable fee support and academic maintenance allowance",
+    "evidence": [
+      {
+        "text": "Enrollment/tuition fee reimbursement and monthly academic maintenance allowance",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Benefits"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "benefit_amount": {
+    "value": "Full compulsory non-refundable tuition fee coverage plus annual maintenance allowance ranging from Rs. 2,500 to Rs. 13,500 per annum depending on course group",
+    "evidence": [
+      {
+        "text": "Full fee reimbursement and maintenance allowance up to Rs. 13,500 per annum for hostellers and day scholars",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Benefits"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_method": {
+    "value": "Online application through National Scholarship Portal (NSP) or State Scholarship Portals",
+    "evidence": [
+      {
+        "text": "Apply online through National Scholarship Portal or respective State Portal",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Application Process"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_url": {
+    "value": "https://scholarships.gov.in",
+    "evidence": [
+      {
+        "text": "National Scholarship Portal https://scholarships.gov.in",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Application Process"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "required_documents": {
+    "value": [
+      "Scheduled Caste Certificate",
+      "Family Income Certificate",
+      "Class 10 / Matriculation Marksheet",
+      "Aadhaar Card linked Bank Account details",
+      "Current Academic Year Fee Receipt"
+    ],
+    "evidence": [
+      {
+        "text": "Caste Certificate, Income Certificate, Academic Marksheet, Aadhaar Details, Fee Receipt",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Documents Required"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  },
+  "application_deadline": {
+    "value": null,
+    "evidence": [],
+    "confidence": 1.0,
+    "verification_status": "not_found"
+  },
+  "scheme_status": {
+    "value": "Active",
+    "evidence": [
+      {
+        "text": "Active / Open for Application",
+        "locator": {
+          "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "section": "Header"
+        }
+      }
+    ],
+    "confidence": 1.0,
+    "verification_status": "verified"
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "document_id": "GOV-M-03",
+  "model_provider": "gemini-flash-lite-latest",
+  "timestamp": "2026-08-28T02:50:56.105986",
+  "schema_valid": true,
+  "audit_results": {
+    "total_fields": 17,
+    "pdf_page_range_valid": true
+  },
+  "extracted_record": {
+    "document_id": {
+      "value": "GOV-M-03",
+      "evidence": [
+        {
+          "text": "DOCUMENT ID: GOV-M-03",
+          "locator": "GOV-M-03-p1-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "ministry_or_department": {
+      "value": "Ministry of New and Renewable Energy",
+      "evidence": [
+        {
+          "text": "Government of India \nMinistry of New and Renewable Energy",
+          "locator": "GOV-M-03-p1-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_name": {
+      "value": "National Bioenergy Programme",
+      "evidence": [
+        {
+          "text": "Subject: Administrative approval for implementation of Biomass Programme \nunder the Umbrella scheme of National Bioenergy Programme for \nduration of FY 2021-22 to 2025-26 (Phase-I)- Reg.",
+          "locator": {
+            "section": "GOV-M-03-p1-c1",
+            "page": 1
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "sub_scheme_name": {
+      "value": "Biomass Programme",
+      "evidence": [
+        {
+          "text": "ii) Biomass Programme (Scheme to Support Manufacturing of Briquettes & Pellets and \nPromotion of Biomass (non-bagasse) based cogeneration in Industries)",
+          "locator": "GOV-M-03-p1-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "phase": {
+      "value": "Phase-I",
+      "evidence": [
+        {
+          "text": "implementation of the National Bioenergy Programm e for a period of 01.04.2021 to \n31.03.2026 with the outlay of Rs.858 crore under Phase-I.",
+          "locator": "GOV-M-03-p1-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "total_outlay_rs_crore": {
+      "value": 858.0,
+      "evidence": [
+        {
+          "text": "implementation of the National Bioenergy Programm e for a period of 01.04.2021 to \n31.03.2026 with the outlay of Rs.858 crore under Phase-I.",
+          "locator": "GOV-M-03-p1-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "sub_scheme_budget_outlay_rs_crore": {
+      "value": {
+        "Waste to Energy Programme": 600.0,
+        "Biomass Programme": 158.0,
+        "Biogas Programme": 100.0
+      },
+      "evidence": [
+        {
+          "text": "Waste to Energy Programm e 600 \nBiomass Programm e 158 \nBiogas Programm e 100",
+          "locator": "GOV-M-03-p2-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_duration": {
+      "value": "01.04.2021 to 31.03.2026",
+      "evidence": [
+        {
+          "text": "implementation of the National Bioenergy Programm e for a period of 01.04.2021 to \n31.03.2026",
+          "locator": "GOV-M-03-p1-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "implementing_agency": {
+      "value": "Indian Renewable Energy Development Agency Limited (IREDA)",
+      "evidence": [
+        {
+          "text": "Indian Renewable Energy Development Agency Limited (IREDA) shall be the \nimplementing agency for implementation of the Biomass programm e.",
+          "locator": "GOV-M-03-p2-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "briquette_pellet_cfa": {
+      "value": "Rs. 9 Lakh per MTPH (metric ton/hour) manufacturing capacity (maximum CFA of Rs 45 Lakhs per plant)",
+      "evidence": [
+        {
+          "text": "Rs. 9 Lakh per MTPH ( metric t on/hour) \nmanufacturing capacity (maximum CFA of Rs \n45 Lakhs per plant)",
+          "locator": "GOV-M-03-p5-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "biomass_cogeneration_cfa": {
+      "value": "Rs. 40 Lakhs/MW (on Installed Capacity) (maximum CFA of Rs. 5 Crores per project)",
+      "evidence": [
+        {
+          "text": "Rs. 40 Lakhs/MW (on Installed Capacity) \n(maximum CFA of Rs. 5 Crores per project)",
+          "locator": "GOV-M-03-p5-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "min_project_plant_size": {
+      "value": {
+        "Briquette/Pellet Manufacturing Plant": "1 MTPH",
+        "Biomass (non-bagasse) Cogeneration Power Plant": "0.5 MW"
+      },
+      "evidence": [
+        {
+          "text": "(a) For Briquette/Pellet Manufacturing Plant: 1 MTPH (m etric tons per hour), (b) \nFor Biomass (non- bagasse) Cogeneration Power Plant: - 0.5 MW.",
+          "locator": "GOV-M-03-p6-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "commissioning_time_period": {
+      "value": {
+        "Briquette / Pellet Manufacturing plants": "12 months",
+        "Biomass (non-bagasse) cogeneration plants": "24 months"
+      },
+      "evidence": [
+        {
+          "text": "The time period for commissioning shall be 12 months for Briquette / Pellet \nManufacturing plants and 24 months for Biomass (non -bagasse) cogeneration \nplants from the date of “In-Principle” approval.",
+          "locator": "GOV-M-03-p8-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "performance_inspection_deadline": {
+      "value": "18 months from the date of commissioning",
+      "evidence": [
+        {
+          "text": "The performance inspection of the \nplant shall have to be carried out within 18 months from the date of \ncommissioning",
+          "locator": "GOV-M-03-p9-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "briquette_pellet_performance_criteria": {
+      "value": {
+        "three_consecutive_days": "Operation of the plant at an average of 80% of rated capacity measured over a period of three consecutive days (taking average 16 Hrs per day as standard operating hours)",
+        "three_consecutive_months": "Operation of the plant at an average of 70% of rated capacity measured over a period of three consecutive months (taking average 16 Hrs per day as standard operating hours)"
+      },
+      "evidence": [
+        {
+          "text": "(a) Operation of the plant at an average of 80% of rated capacity measured \nover a period of three consecutive days (taking average16 Hrs per day \nas standard operating hours), and \n(b) Operation of the plant at an average of 70% of rated capacity measured \nover a period of three consecutive months (taking average 16 Hrs per day \nas standard operating hours).",
+          "locator": "GOV-M-03-p9-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "biomass_cogeneration_performance_criteria": {
+      "value": {
+        "continuous_72_hours": "Continuous operation of the power plant for 72 hours at an average of 80% of rated capacity",
+        "three_consecutive_months": "Operation of the power plant at an average 80% of rated capacity measured over a period of three consecutive months"
+      },
+      "evidence": [
+        {
+          "text": "(a) Continuous operation of the power plant for 72 hours at an average of \n80% of rated capacity, and \n(b) Operation of the power plant at an average 80% of rated capacity \nmeasured over a period of three consecutive months.",
+          "locator": "GOV-M-03-p10-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "last_date_for_submitting_applications": {
+      "value": "31.12.2025",
+      "evidence": [
+        {
+          "text": "The last date for submitting \nthe applications under these guidelines shall be 31.12.2025.",
+          "locator": "GOV-M-03-p7-c1"
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "document_metadata": {
+      "document_id": "GOV-M-03",
+      "source_type": "PDF",
+      "source_identifier": "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2023/10/20231005812894382.pdf",
+      "extraction_timestamp": "2026-08-28T02:50:56.085326"
+    },
+    "scheme_type": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "implementing_authority": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "target_beneficiaries": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "education_level": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "age_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "income_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "academic_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "category_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "domicile_criteria": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "benefit_type": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "benefit_amount": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "application_method": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "application_url": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "required_documents": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "application_deadline": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "scheme_status": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    }
+  }
+}
