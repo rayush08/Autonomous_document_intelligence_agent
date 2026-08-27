@@ -10,7 +10,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMA_PATH = os.path.join(BASE_DIR, "schemas", "government_scheme.json")
+OPPORTUNITY_SCHEMA_PATH = os.path.join(BASE_DIR, "schemas", "opportunity.json")
 DOCS_DIR = os.path.join(BASE_DIR, "data", "government_schemes", "documents")
+OPP_DOCS_DIR = os.path.join(BASE_DIR, "data", "opportunities", "documents")
 FIXTURES_DIR = os.path.join(BASE_DIR, "tests", "fixtures", "extractions")
 
 ALLOWED_VERIFICATION_STATUSES = {
@@ -55,16 +57,64 @@ SCHEMA_FIELDS = [
     "scheme_status"
 ]
 
+OPPORTUNITY_SCHEMA_FIELDS = [
+    "title",
+    "organization",
+    "opportunity_type",
+    "education_level",
+    "eligible_disciplines",
+    "skills_required",
+    "experience_required",
+    "eligibility_notes",
+    "location",
+    "mode",
+    "duration",
+    "stipend_or_funding",
+    "start_date",
+    "application_deadline",
+    "application_url",
+    "required_documents"
+]
 
-def load_schema() -> dict:
-    """Load the JSON schema definition."""
-    with open(SCHEMA_PATH, 'r', encoding='utf-8') as f:
+
+def load_schema(domain: str = "government_schemes") -> dict:
+    """Load JSON schema definition for specified domain."""
+    if domain and any(k in str(domain).lower() for k in ["opportunity", "opportunities", "opp"]):
+        schema_path = OPPORTUNITY_SCHEMA_PATH
+    else:
+        schema_path = SCHEMA_PATH
+
+    with open(schema_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
+def get_schema_fields(record_or_domain=None) -> list[str]:
+    """Get domain-aware target field names."""
+    if isinstance(record_or_domain, str):
+        if any(k in record_or_domain.lower() for k in ["opportunity", "opportunities", "opp"]):
+            return OPPORTUNITY_SCHEMA_FIELDS
+        return SCHEMA_FIELDS
+
+    if isinstance(record_or_domain, dict):
+        if "title" in record_or_domain and "organization" in record_or_domain and "scheme_name" not in record_or_domain:
+            return OPPORTUNITY_SCHEMA_FIELDS
+        if record_or_domain.get("document_metadata", {}).get("document_id", "").startswith("OPP-"):
+            return OPPORTUNITY_SCHEMA_FIELDS
+
+    return SCHEMA_FIELDS
+
+
+get_fields_for_record = get_schema_fields
+
+
+
 def load_ingested_artifact(document_id: str) -> dict:
-    """Load ingested document artifact from data/government_schemes/documents/."""
-    path = os.path.join(DOCS_DIR, f"{document_id}_extracted.json")
+    """Load ingested document artifact from government_schemes or opportunities directory."""
+    if str(document_id).startswith("OPP-"):
+        path = os.path.join(OPP_DOCS_DIR, f"{document_id}_extracted.json")
+    else:
+        path = os.path.join(DOCS_DIR, f"{document_id}_extracted.json")
+
     if not os.path.exists(path):
         raise FileNotFoundError(f"Ingested artifact not found for document_id: '{document_id}' at {path}")
     with open(path, 'r', encoding='utf-8') as f:
@@ -80,7 +130,8 @@ def normalize_verification_statuses(record: dict) -> dict:
     if not isinstance(record, dict):
         return record
 
-    for field_name in SCHEMA_FIELDS:
+    target_fields = get_schema_fields(record)
+    for field_name in target_fields:
         if field_name in record and isinstance(record[field_name], dict):
             field_obj = record[field_name]
             raw_status = field_obj.get('verification_status')
@@ -120,7 +171,11 @@ def canonicalize_evidence_locator(locator):
 
 
 def canonicalize_benefit_amount(val):
-    """Conservatively canonicalize multi-component benefit strings into a list."""
+    """
+    Conservatively canonicalize multi-component benefit/stipend strings into a list.
+    Preserves numeric thousands-separated numbers (₹50,000, $5,400, 2,700 CHF, 1,25,000)
+    and parenthetical expressions completely intact.
+    """
     if val is None or isinstance(val, list):
         return val
     if not isinstance(val, str):
@@ -149,21 +204,22 @@ def canonicalize_benefit_amount(val):
     if len(numbered_parts) > 1:
         return numbered_parts
 
-    # 4. Multi-item monetary clause split by commas
-    if ',' in val_str:
-        parts = [p.strip() for p in val_str.split(',') if p.strip()]
-        fin_keywords = ["fee", "tuition", "living", "expense", "allowance", "book", "stationery", "laptop", "computer", "stipend", "grant", "rs", "₹", "lakh", "per annum", "per month"]
-        matching_parts = [p for p in parts if any(w in p.lower() for w in fin_keywords)]
-        if len(matching_parts) >= 2:
-            return [p.strip() for p in parts if len(p.strip()) > 3]
+    # 4. Independent benefit clauses separated by explicit conjunctions e.g. "..., and ..., plus ..."
+    conj_split = re.split(r',\s*(?:and|plus|as well as)\s+', val_str, flags=re.IGNORECASE)
+    conj_parts = [p.strip() for p in conj_split if p.strip()]
+    if len(conj_parts) >= 2:
+        fin_words = ["fee", "stipend", "allowance", "grant", "housing", "travel", "reimbursement", "laptop", "subsistence", "waiver", "cfa"]
+        if sum(1 for p in conj_parts if any(w in p.lower() for w in fin_words)) >= 2:
+            return conj_parts
 
     return val_str
+
 
 
 def canonicalize_extracted_record(record: dict, document_id: str = None) -> dict:
     """
     Canonicalize raw LLM output record before schema validation.
-    - Normalizes status synonyms, locators, benefit_amount lists.
+    - Normalizes status synonyms, locators, benefit_amount/stipend lists.
     - Only injects missing schema fields if record is a valid scheme extraction attempt.
     - Case A (Genuine missing info): value is None/missing and evidence is empty/missing -> canonicalize to not_found.
     - Case B (Claim exists but evidence missing): value is NON-NULL and evidence is empty/missing -> DO NOT convert to not_found! Preserve claim & status so validation rejects it and triggers retry feedback.
@@ -176,20 +232,23 @@ def canonicalize_extracted_record(record: dict, document_id: str = None) -> dict
 
     if document_id and not record["document_metadata"].get("document_id"):
         record["document_metadata"]["document_id"] = document_id
+    elif not document_id:
+        document_id = record["document_metadata"].get("document_id", "")
 
     # 1. Normalize status synonyms
     record = normalize_verification_statuses(record)
+    target_fields = get_schema_fields(record)
 
     # Count valid existing schema field dicts
     existing_schema_field_count = sum(
-        1 for f in SCHEMA_FIELDS if f in record and isinstance(record[f], dict)
+        1 for f in target_fields if f in record and isinstance(record[f], dict)
     )
 
     # If the LLM returned garbage output (e.g. {"invalid_key": "bad"}), do NOT synthesize schema fields
-    is_valid_extraction_attempt = existing_schema_field_count >= 2 or "scheme_name" in record
+    is_valid_extraction_attempt = existing_schema_field_count >= 2 or "scheme_name" in record or "title" in record
 
     # 2. Process schema fields
-    for field_name in SCHEMA_FIELDS:
+    for field_name in target_fields:
         if field_name not in record or not isinstance(record[field_name], dict):
             if is_valid_extraction_attempt:
                 record[field_name] = {
@@ -202,8 +261,8 @@ def canonicalize_extracted_record(record: dict, document_id: str = None) -> dict
 
         field_obj = record[field_name]
 
-        # Canonicalize benefit_amount
-        if field_name == "benefit_amount":
+        # Canonicalize benefit_amount / stipend_or_funding
+        if field_name in {"benefit_amount", "stipend_or_funding", "required_documents", "category_criteria", "eligible_disciplines"}:
             field_obj["value"] = canonicalize_benefit_amount(field_obj.get("value"))
 
         status = field_obj.get("verification_status", "not_found")
@@ -237,17 +296,19 @@ def validate_extracted_record(record: dict) -> tuple[bool, list[str]]:
     """Validate extracted record against JSON Schema and domain verification constraints."""
     # 0. Normalize status synonyms
     normalize_verification_statuses(record)
+    target_fields = get_schema_fields(record)
+    domain_name = "opportunities" if target_fields == OPPORTUNITY_SCHEMA_FIELDS else "government_schemes"
     
     errors = []
     
     # 1. JSON Schema validation
-    schema = load_schema()
+    schema = load_schema(domain=domain_name)
     validator = jsonschema.Draft202012Validator(schema)
     for err in validator.iter_errors(record):
         errors.append(f"JSONSchemaError at {list(err.path)}: {err.message}")
 
     # 2. Verification status and evidence constraints check
-    for field_name in SCHEMA_FIELDS:
+    for field_name in target_fields:
         if field_name not in record:
             errors.append(f"MissingField: Expected field '{field_name}' in extracted record")
             continue
@@ -308,6 +369,7 @@ class FixtureExtractor(BaseExtractor):
                 
         # Default fallback: generate schema-compliant empty record with not_found status
         now_iso = datetime.now().isoformat()
+        target_fields = get_schema_fields("opportunity" if str(document_id).startswith("OPP-") else "government")
         record = {
             "document_metadata": {
                 "document_id": document_id,
@@ -316,7 +378,7 @@ class FixtureExtractor(BaseExtractor):
                 "extraction_timestamp": now_iso
             }
         }
-        for field in SCHEMA_FIELDS:
+        for field in target_fields:
             record[field] = {
                 "value": None,
                 "evidence": [],
@@ -327,7 +389,7 @@ class FixtureExtractor(BaseExtractor):
 
 
 def extract_document(document_id: str, extractor: BaseExtractor = None) -> dict:
-    """Core entry point to extract and validate a government scheme record."""
+    """Core entry point to extract and validate a government scheme or opportunity record."""
     ingested_artifact = load_ingested_artifact(document_id)
     if extractor is None:
         extractor = FixtureExtractor()
@@ -349,7 +411,7 @@ def get_llm_extractor(*args, **kwargs):
 
 
 if __name__ == "__main__":
-    for doc_id in ['GOV-E-01', 'GOV-M-02', 'GOV-M-03']:
+    for doc_id in ['GOV-E-01', 'GOV-M-02', 'GOV-M-03', 'OPP-E-01']:
         res = extract_document(doc_id)
         print(f"✅ [{doc_id}] Extraction & Validation Passed! Document Metadata:", res['document_metadata'])
 
