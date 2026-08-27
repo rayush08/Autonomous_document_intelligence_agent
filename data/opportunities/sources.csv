@@ -1,1 +1,4 @@
 document_id,title,source_url,source_type,format,domain,expected_difficulty,notes
+OPP-E-01,MIT Summer Research Program (MSRP),https://mit.edu/msrp,university_opportunity_page,HTML,opportunities,easy,"Official MIT MSRP announcement with eligibility, stipend, research disciplines, and application details."
+OPP-E-02,CERN Summer Student Programme,https://careers.cern/summer,research_institute_call,HTML,opportunities,easy,"Official CERN summer student call for physics and engineering students with stipend, duration, and deadline."
+OPP-M-01,Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF),https://ec.europa.eu/research/mariecurieactions,postdoctoral_fellowship_guidelines,PDF,opportunities,medium,"Official Horizon Europe MSCA postdoctoral fellowship guidelines with mobility rules, stipend breakdown, and requirements."
