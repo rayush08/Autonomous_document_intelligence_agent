@@ -1,0 +1,61 @@
+{
+  "overall_metrics": {
+    "schema_validity_rate": {
+      "Run 1": 1.0,
+      "Run 2": 1.0,
+      "Run 3": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "std": 0.0
+    },
+    "field_extraction_accuracy": {
+      "Run 1": 0.5329,
+      "Run 2": 0.5449,
+      "Run 3": 0.5269,
+      "mean": 0.5349,
+      "min": 0.5269,
+      "max": 0.5449,
+      "std": 0.007483314773547889
+    },
+    "verification_status_accuracy": {
+      "Run 1": 0.8563,
+      "Run 2": 0.8383,
+      "Run 3": 0.8563,
+      "mean": 0.8503,
+      "min": 0.8383,
+      "max": 0.8563,
+      "std": 0.008485281374238526
+    },
+    "missing_information_accuracy": {
+      "Run 1": 0.8519,
+      "Run 2": 0.8148,
+      "Run 3": 0.8519,
+      "mean": 0.8395333333333334,
+      "min": 0.8148,
+      "max": 0.8519,
+      "std": 0.017489107721347284
+    },
+    "hallucination_rate": {
+      "Run 1": 0.1481,
+      "Run 2": 0.1852,
+      "Run 3": 0.1481,
+      "mean": 0.16046666666666667,
+      "min": 0.1481,
+      "max": 0.1852,
+      "std": 0.017489107721347274
+    },
+    "evidence_grounding_accuracy": {
+      "Run 1": 1.0,
+      "Run 2": 1.0,
+      "Run 3": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "std": 0.0
+    }
+  },
+  "per_document_accuracy": {},
+  "per_field_accuracy": {},
+  "total_failures_recorded": 0
+}

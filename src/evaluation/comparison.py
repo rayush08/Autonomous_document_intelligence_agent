@@ -58,6 +58,15 @@ def compare_values(exp_val, ext_val) -> float:
 
     if exp_norm == ext_norm:
         return 1.0
+
+    # Extract all numeric numbers from both strings
+    exp_nums = re.findall(r'\b\d+(?:\.\d+)?\b', exp_norm)
+    ext_nums = re.findall(r'\b\d+(?:\.\d+)?\b', ext_norm)
+
+    # If numbers exist in both and differ, return 0.0 (do NOT perform substring/partial match for different numbers!)
+    if exp_nums and ext_nums and set(exp_nums) != set(ext_nums):
+        return 0.0
+
     if exp_norm in ext_norm or ext_norm in exp_norm:
         return 0.9
 

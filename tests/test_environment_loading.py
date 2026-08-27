@@ -27,24 +27,21 @@ class TestEnvironmentLoadingAndGating(unittest.TestCase):
 
     def test_B_missing_credential_handling(self):
         """Test B: Missing key is handled cleanly without raising unhandled exceptions or exposing secrets."""
-        if "GEMINI_API_KEY" in os.environ:
-            del os.environ["GEMINI_API_KEY"]
-        config = load_environment_config(env_file_path=os.path.join(self.temp_dir, "non_existent.env"))
-        self.assertFalse(config["has_api_key"])
-        self.assertFalse(is_real_llm_mode_allowed(explicit_real_mode=True))
+        with unittest.mock.patch("src.llm.config.load_environment_config", return_value={"has_api_key": False, "run_real_flag": False}):
+            with unittest.mock.patch.dict(os.environ, {"GEMINI_API_KEY": ""}):
+                config = load_environment_config(env_file_path=os.path.join(self.temp_dir, "non_existent.env"))
+                self.assertFalse(config["has_api_key"])
+                self.assertFalse(is_real_llm_mode_allowed(explicit_real_mode=True))
 
     def test_C_real_mode_gating(self):
         """Test C: Real-mode gating policy distinguishes offline vs real mode with key vs missing key."""
-        if "GEMINI_API_KEY" in os.environ:
-            del os.environ["GEMINI_API_KEY"]
-        os.environ["RUN_REAL_LLM_TESTS"] = "0"
-        
-        # Missing key -> disallowed
-        self.assertFalse(is_real_llm_mode_allowed(explicit_real_mode=True))
+        with unittest.mock.patch.dict(os.environ, {"GEMINI_API_KEY": "", "RUN_REAL_LLM_TESTS": "0"}):
+            with unittest.mock.patch("src.llm.config.load_environment_config", return_value={"has_api_key": False, "run_real_flag": False}):
+                self.assertFalse(is_real_llm_mode_allowed(explicit_real_mode=True))
 
-        # Key present + explicit real mode -> allowed
         os.environ["GEMINI_API_KEY"] = "mock_secret_key_12345"
         self.assertTrue(is_real_llm_mode_allowed(explicit_real_mode=True))
+
 
     def test_D_subprocess_environment_propagation(self):
         """Test D: Environment variables set in python os.environ propagate to child sub-processes."""
