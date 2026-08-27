@@ -1,0 +1,15 @@
+{
+  "total_target_records": 0,
+  "priority_breakdown": {
+    "Priority 1: List Incompleteness": 0,
+    "Priority 2: Numeric Normalization": 0,
+    "Priority 3: Unit & Format Normalization": 0,
+    "Priority 4: Taxonomy & Category Mismatch": 0
+  },
+  "target_records": {
+    "Priority 1: List Incompleteness": [],
+    "Priority 2: Numeric Normalization": [],
+    "Priority 3: Unit & Format Normalization": [],
+    "Priority 4: Taxonomy & Category Mismatch": []
+  }
+}

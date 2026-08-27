@@ -95,6 +95,16 @@ def validate_semantic_completeness(record: dict, chunks: list[dict]) -> tuple[bo
                     msg_text = hint_cfg["message"].format(kw_str=found_kw_str)
                     errors.append(f"SemanticCompletenessError: {msg_text}")
 
+    # Check for partial list completeness on required_documents
+    if "required_documents" in record and isinstance(record["required_documents"], dict):
+        f_val = record["required_documents"].get("value")
+        if isinstance(f_val, list) and 1 <= len(f_val) <= 2:
+            doc_kw_matches = [kw for kw in FIELD_SEMANTIC_HINTS["required_documents"]["keywords"] if kw in full_doc_text]
+            if len(doc_kw_matches) >= len(f_val) + 2:
+                errors.append(f"SemanticCompletenessError: Field 'required_documents' extracted only {len(f_val)} items, but source document contains additional requirement indicators ({', '.join(doc_kw_matches[:4])}). Re-examine source text and extract ALL required documents into a complete list.")
+
     is_valid = (len(errors) == 0)
     return is_valid, errors
+
+
 
