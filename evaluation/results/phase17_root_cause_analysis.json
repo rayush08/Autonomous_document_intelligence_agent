@@ -1,0 +1,7 @@
+{
+  "hypotheses_evaluated": {
+    "H1": "Semantic paraphrase mismatch (Verified & handled in string/token normalization)",
+    "H5": "Recovery overwrites initial extractions (Verified & fixed in LLMExtractor.recover_target_field)",
+    "H11": "Numeric & unit token collision (Verified & fixed in canonicalizer)"
+  }
+}

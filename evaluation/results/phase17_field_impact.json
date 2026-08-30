@@ -1,0 +1,10 @@
+{
+  "fields_protected": [
+    "scheme_name",
+    "target_beneficiaries",
+    "required_documents",
+    "stipend_or_funding",
+    "benefit_amount"
+  ],
+  "verified_safety": "Safe recovery merging prevents null overwriting across all fields."
+}
