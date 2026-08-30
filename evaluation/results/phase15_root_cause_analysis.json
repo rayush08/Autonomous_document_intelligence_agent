@@ -1,0 +1,7 @@
+{
+  "hypotheses_evaluated": {
+    "H1": "Group extraction loses cross-field context (PARTIALLY SUPPORTED & mitigated)",
+    "H5": "Recovery introduces degradation (SUPPORTED & fixed in LLMExtractor.recover_target_field)",
+    "H11": "Numeric & unit normalization incomplete (SUPPORTED & fixed in canonicalizer)"
+  }
+}
