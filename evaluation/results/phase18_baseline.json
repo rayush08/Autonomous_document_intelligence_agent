@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_LIVE_API_VALIDATION_UNAVAILABLE",
+  "frozen_phase6_baseline": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.5349,
+    "verification_status_accuracy": 0.8503,
+    "missing_information_accuracy": 0.8395,
+    "hallucination_rate": 0.1605,
+    "evidence_grounding_accuracy": 1.0
+  },
+  "phase9_observed_regression": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.489,
+    "verification_status_accuracy": 0.8363,
+    "missing_information_accuracy": 0.7654,
+    "hallucination_rate": 0.2346,
+    "evidence_grounding_accuracy": 1.0
+  }
+}
