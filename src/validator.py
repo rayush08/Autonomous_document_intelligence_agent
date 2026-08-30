@@ -15,7 +15,29 @@ def load_schema():
         return json.load(sf)
 
 
+def validate_against_schema(record_data: dict, domain: str = "government_scheme") -> dict:
+    """
+    Validates an extracted record against the target domain JSON schema.
+    """
+    schema_name = "opportunity.json" if domain == "opportunity" else "government_scheme.json"
+    schema_path = os.path.join(BASE_DIR, "schemas", schema_name)
+    if not os.path.exists(schema_path):
+        schema_path = SCHEMA_PATH
+
+    with open(schema_path, "r", encoding="utf-8") as sf:
+        schema = json.load(sf)
+
+    validator = jsonschema.Draft202012Validator(schema)
+    errors = [err.message for err in validator.iter_errors(record_data)]
+    return {
+        "valid": len(errors) == 0,
+        "error_count": len(errors),
+        "errors": errors
+    }
+
+
 def validate_gold_records():
+
     schema = load_schema()
     validator = jsonschema.Draft202012Validator(schema)
     

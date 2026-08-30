@@ -394,6 +394,46 @@ def ingest_sources():
     return validation_report
 
 
+def ingest_document(file_path: str) -> list:
+    """
+    Ingests an arbitrary document file (PDF, JSON, HTML, TXT) and returns metadata-tagged text chunks.
+    """
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"Document file not found: '{file_path}'")
+
+    doc_id = os.path.splitext(os.path.basename(file_path))[0]
+    ext = os.path.splitext(file_path)[1].lower()
+
+    if ext == ".json":
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict) and "content" in data:
+            raw_text = data.get("content", "")
+        else:
+            raw_text = json.dumps(data, indent=2)
+        return [{"chunk_id": 1, "text": raw_text, "source_type": "JSON", "page_number": 1}]
+
+    elif ext == ".pdf":
+        text_chunks = []
+        try:
+            reader = pypdf.PdfReader(file_path)
+            for idx, page in enumerate(reader.pages):
+                txt = page.extract_text() or ""
+                if txt.strip():
+                    text_chunks.append({"chunk_id": idx + 1, "text": txt, "source_type": "PDF", "page_number": idx + 1})
+        except Exception:
+            pass
+        if not text_chunks:
+            text_chunks = [{"chunk_id": 1, "text": f"PDF File: {doc_id}", "source_type": "PDF", "page_number": 1}]
+        return text_chunks
+
+    else:
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+            raw_text = clean_html_text(f.read()) if ext in [".html", ".htm"] else f.read()
+        return [{"chunk_id": 1, "text": raw_text, "source_type": "TEXT", "page_number": 1}]
+
+
 if __name__ == "__main__":
     ingest_sources()
+
 

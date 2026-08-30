@@ -17,7 +17,7 @@
       "verification_status_accuracy": 0.521,
       "missing_info_accuracy": 1.0,
       "hallucination_rate": 0.0,
-      "average_latency_seconds": 0.004
+      "average_latency_seconds": 0.007
     },
     "opportunities": {
       "total_documents": 3,
@@ -26,7 +26,7 @@
       "verification_status_accuracy": 0.1042,
       "missing_info_accuracy": 1.0,
       "hallucination_rate": 0.0,
-      "average_latency_seconds": 0.003
+      "average_latency_seconds": 0.006
     }
   },
   "document_breakdown": [
@@ -34,7 +34,7 @@
       "document_id": "GOV-E-01",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.006,
+      "latency_seconds": 0.009,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 1.0,
@@ -44,7 +44,7 @@
       "document_id": "GOV-E-02",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.004,
+      "latency_seconds": 0.006,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 0.1176,
@@ -54,7 +54,7 @@
       "document_id": "GOV-E-03",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.003,
+      "latency_seconds": 0.007,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 0.1176,
@@ -64,7 +64,7 @@
       "document_id": "GOV-E-04",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.003,
+      "latency_seconds": 0.005,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 0.2353,
@@ -74,7 +74,7 @@
       "document_id": "GOV-M-01",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.003,
+      "latency_seconds": 0.007,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 0.1765,
@@ -84,7 +84,7 @@
       "document_id": "GOV-M-02",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.005,
+      "latency_seconds": 0.009,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 1.0,
@@ -94,7 +94,7 @@
       "document_id": "GOV-M-03",
       "domain": "government_schemes",
       "schema_valid": true,
-      "latency_seconds": 0.004,
+      "latency_seconds": 0.007,
       "attempts": 1,
       "field_count": 17,
       "value_accuracy": 1.0,
@@ -104,7 +104,7 @@
       "document_id": "OPP-E-01",
       "domain": "opportunities",
       "schema_valid": true,
-      "latency_seconds": 0.003,
+      "latency_seconds": 0.006,
       "attempts": 1,
       "field_count": 16,
       "value_accuracy": 0.0625,
@@ -114,7 +114,7 @@
       "document_id": "OPP-E-02",
       "domain": "opportunities",
       "schema_valid": true,
-      "latency_seconds": 0.003,
+      "latency_seconds": 0.005,
       "attempts": 1,
       "field_count": 16,
       "value_accuracy": 0.125,
@@ -124,7 +124,7 @@
       "document_id": "OPP-M-01",
       "domain": "opportunities",
       "schema_valid": true,
-      "latency_seconds": 0.003,
+      "latency_seconds": 0.006,
       "attempts": 1,
       "field_count": 16,
       "value_accuracy": 0.125,
@@ -284,10 +284,10 @@
     "failures_after_retry": 0
   },
   "latency_statistics": {
-    "mean_latency_seconds": 0.004,
-    "median_latency_seconds": 0.003,
-    "slowest_document_id": "GOV-E-01",
-    "max_latency_seconds": 0.006
+    "mean_latency_seconds": 0.007,
+    "median_latency_seconds": 0.006,
+    "slowest_document_id": "GOV-M-02",
+    "max_latency_seconds": 0.009
   },
   "raw_results": [
     {
@@ -297,7 +297,7 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.0064203739166259766,
+      "latency_seconds": 0.008666276931762695,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
@@ -749,14 +749,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.004057168960571289,
+      "latency_seconds": 0.005603313446044922,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "GOV-E-02",
           "source_type": "text/html",
           "source_identifier": "https://csirhrdg.res.in/Home/Index/1/Default/3384/60",
-          "extraction_timestamp": "2026-08-28T05:23:30.160821"
+          "extraction_timestamp": "2026-08-30T12:55:40.986785"
         },
         "scheme_name": {
           "value": null,
@@ -1075,14 +1075,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.0034737586975097656,
+      "latency_seconds": 0.006571054458618164,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "GOV-E-03",
           "source_type": "application/json",
           "source_identifier": "https://www.myscheme.gov.in/schemes/pssgtd",
-          "extraction_timestamp": "2026-08-28T05:23:30.167819"
+          "extraction_timestamp": "2026-08-30T12:55:40.997447"
         },
         "scheme_name": {
           "value": null,
@@ -1401,14 +1401,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.002534151077270508,
+      "latency_seconds": 0.004895210266113281,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "GOV-E-04",
           "source_type": "text/html",
           "source_identifier": "https://www.dosje.gov.in/organisation/pradhan-mantri-anusuchit-jaati-abhyuday-yojnapm-ajay/",
-          "extraction_timestamp": "2026-08-28T05:23:30.173803"
+          "extraction_timestamp": "2026-08-30T12:55:41.010111"
         },
         "scheme_name": {
           "value": null,
@@ -1727,14 +1727,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.0025179386138916016,
+      "latency_seconds": 0.0074350833892822266,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "GOV-M-01",
           "source_type": "text/html",
           "source_identifier": "https://fellowship.tribal.gov.in/",
-          "extraction_timestamp": "2026-08-28T05:23:30.179684"
+          "extraction_timestamp": "2026-08-30T12:55:41.019199"
         },
         "scheme_name": {
           "value": null,
@@ -2053,7 +2053,7 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.004756927490234375,
+      "latency_seconds": 0.008806228637695312,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
@@ -2508,7 +2508,7 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.0038330554962158203,
+      "latency_seconds": 0.007481575012207031,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
@@ -2960,14 +2960,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.002688884735107422,
+      "latency_seconds": 0.00623631477355957,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "OPP-E-01",
           "source_type": "HTML",
           "source_identifier": "https://mit.edu/msrp",
-          "extraction_timestamp": "2026-08-28T05:23:30.207100"
+          "extraction_timestamp": "2026-08-30T12:55:41.077169"
         },
         "title": {
           "value": null,
@@ -3268,14 +3268,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.002618551254272461,
+      "latency_seconds": 0.0054361820220947266,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "OPP-E-02",
           "source_type": "HTML",
           "source_identifier": "https://careers.cern/summer",
-          "extraction_timestamp": "2026-08-28T05:23:30.212855"
+          "extraction_timestamp": "2026-08-30T12:55:41.090121"
         },
         "title": {
           "value": null,
@@ -3576,14 +3576,14 @@
       "schema_errors": [],
       "is_infrastructure_failure": false,
       "infrastructure_error": "",
-      "latency_seconds": 0.002711772918701172,
+      "latency_seconds": 0.0055942535400390625,
       "extraction_attempts": 1,
       "extracted_record": {
         "document_metadata": {
           "document_id": "OPP-M-01",
           "source_type": "PDF",
           "source_identifier": "https://ec.europa.eu/research/mariecurieactions",
-          "extraction_timestamp": "2026-08-28T05:23:30.217998"
+          "extraction_timestamp": "2026-08-30T12:55:41.102367"
         },
         "title": {
           "value": null,

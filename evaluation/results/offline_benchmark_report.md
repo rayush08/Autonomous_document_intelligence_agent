@@ -19,8 +19,8 @@
 
 | Domain | Documents | Schema Validity | Value Accuracy | Status Accuracy | Missing Info Acc | Hallucination Rate | Mean Latency |
 |---|---|---|---|---|---|---|---|
-| **government_schemes** | 7 | 100.0% | 52.1% | 52.1% | 100.0% | 0.0% | 0.004s |
-| **opportunities** | 3 | 100.0% | 10.4% | 10.4% | 100.0% | 0.0% | 0.003s |
+| **government_schemes** | 7 | 100.0% | 52.1% | 52.1% | 100.0% | 0.0% | 0.007s |
+| **opportunities** | 3 | 100.0% | 10.4% | 10.4% | 100.0% | 0.0% | 0.006s |
 
 ---
 
@@ -28,16 +28,16 @@
 
 | Document ID | Domain | Schema Valid | Attempts | Value Accuracy | Status Accuracy | Latency |
 |---|---|---|---|---|---|---|
-| `GOV-E-01` | government_schemes | ✅ YES | 1 | 100.0% | 100.0% | 0.006s |
-| `GOV-E-02` | government_schemes | ✅ YES | 1 | 11.8% | 11.8% | 0.004s |
-| `GOV-E-03` | government_schemes | ✅ YES | 1 | 11.8% | 11.8% | 0.003s |
-| `GOV-E-04` | government_schemes | ✅ YES | 1 | 23.5% | 23.5% | 0.003s |
-| `GOV-M-01` | government_schemes | ✅ YES | 1 | 17.6% | 17.6% | 0.003s |
-| `GOV-M-02` | government_schemes | ✅ YES | 1 | 100.0% | 100.0% | 0.005s |
-| `GOV-M-03` | government_schemes | ✅ YES | 1 | 100.0% | 100.0% | 0.004s |
-| `OPP-E-01` | opportunities | ✅ YES | 1 | 6.2% | 6.2% | 0.003s |
-| `OPP-E-02` | opportunities | ✅ YES | 1 | 12.5% | 12.5% | 0.003s |
-| `OPP-M-01` | opportunities | ✅ YES | 1 | 12.5% | 12.5% | 0.003s |
+| `GOV-E-01` | government_schemes | ✅ YES | 1 | 100.0% | 100.0% | 0.009s |
+| `GOV-E-02` | government_schemes | ✅ YES | 1 | 11.8% | 11.8% | 0.006s |
+| `GOV-E-03` | government_schemes | ✅ YES | 1 | 11.8% | 11.8% | 0.007s |
+| `GOV-E-04` | government_schemes | ✅ YES | 1 | 23.5% | 23.5% | 0.005s |
+| `GOV-M-01` | government_schemes | ✅ YES | 1 | 17.6% | 17.6% | 0.007s |
+| `GOV-M-02` | government_schemes | ✅ YES | 1 | 100.0% | 100.0% | 0.009s |
+| `GOV-M-03` | government_schemes | ✅ YES | 1 | 100.0% | 100.0% | 0.007s |
+| `OPP-E-01` | opportunities | ✅ YES | 1 | 6.2% | 6.2% | 0.006s |
+| `OPP-E-02` | opportunities | ✅ YES | 1 | 12.5% | 12.5% | 0.005s |
+| `OPP-M-01` | opportunities | ✅ YES | 1 | 12.5% | 12.5% | 0.006s |
 
 ---
 
@@ -46,9 +46,9 @@
 - **Total Extraction Attempts**: `10`
 - **Semantic Retries Executed**: `0`
 - **Failures After Retry**: `0`
-- **Mean Document Latency**: `0.004s`
-- **Median Document Latency**: `0.003s`
-- **Slowest Document**: `GOV-E-01 (0.006s)`
+- **Mean Document Latency**: `0.007s`
+- **Median Document Latency**: `0.006s`
+- **Slowest Document**: `GOV-M-02 (0.009s)`
 
 ---
 
