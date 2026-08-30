@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-30T12:50:35Z",
+  "status": "PHASE 19 \u2014 PARTIALLY VALIDATED: LIVE API VALIDATION UNAVAILABLE",
+  "api_endpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+  "http_status": 400,
+  "error_reason": "API_KEY_INVALID",
+  "error_message": "API key not valid. Please pass a valid API key.",
+  "frozen_phase6_baseline": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.5349,
+    "verification_status_accuracy": 0.8503,
+    "missing_information_accuracy": 0.8395,
+    "hallucination_rate": 0.1605,
+    "evidence_grounding_accuracy": 1.0
+  },
+  "unit_test_suite": {
+    "compilation_status": "PASSED (0 syntax errors)",
+    "total_tests": 250,
+    "passed": 249,
+    "skipped": 1,
+    "failed": 0
+  },
+  "verdict": "PHASE 19 \u2014 PARTIALLY VALIDATED"
+}
