@@ -1,0 +1,49 @@
+{
+  "phase": "Phase 9 Release Readiness",
+  "git_commit": "bcdbd37",
+  "branch": "main",
+  "document_ids": [
+    "GOV-E-01",
+    "GOV-E-02",
+    "GOV-E-03",
+    "GOV-E-04",
+    "GOV-M-01",
+    "GOV-M-02",
+    "GOV-M-03",
+    "OPP-E-01",
+    "OPP-E-02",
+    "OPP-M-01"
+  ],
+  "total_documents": 10,
+  "active_model_discovery": "GeminiLLMClient.create_auto_discovered_client",
+  "extraction_architecture": "Evidence-first domain-grouped extraction with semantic retry & targeted recovery",
+  "group_definitions": {
+    "government_schemes": [
+      "metadata",
+      "eligibility",
+      "benefits",
+      "application"
+    ],
+    "opportunities": [
+      "metadata",
+      "eligibility",
+      "details"
+    ]
+  },
+  "retry_configuration": {
+    "max_retries": 2,
+    "max_model_failovers": 3
+  },
+  "semantic_completeness": "Active (FIELD_SEMANTIC_HINTS + partial list verification)",
+  "evidence_verification": "Active (verify_evidence_against_document)",
+  "evaluator_normalization": "Exact token numeric matching & symmetric currency/frequency canonicalization",
+  "request_upper_bound": 108,
+  "frozen_baseline": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.5349,
+    "verification_status_accuracy": 0.8503,
+    "missing_information_accuracy": 0.8395,
+    "hallucination_rate": 0.1605,
+    "evidence_grounding_accuracy": 1.0
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "top_failing_fields": [
+    {
+      "field": "eligibility_notes",
+      "value_accuracy": 0.0,
+      "status_accuracy": 0.6667
+    },
+    {
+      "field": "scheme_type",
+      "value_accuracy": 0.1429,
+      "status_accuracy": 0.8571
+    },
+    {
+      "field": "target_beneficiaries",
+      "value_accuracy": 0.1429,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "benefit_amount",
+      "value_accuracy": 0.1429,
+      "status_accuracy": 0.7143
+    },
+    {
+      "field": "benefit_type",
+      "value_accuracy": 0.2381,
+      "status_accuracy": 0.9524
+    },
+    {
+      "field": "academic_criteria",
+      "value_accuracy": 0.2857,
+      "status_accuracy": 0.7143
+    },
+    {
+      "field": "domicile_criteria",
+      "value_accuracy": 0.2857,
+      "status_accuracy": 0.7143
+    },
+    {
+      "field": "required_documents",
+      "value_accuracy": 0.3,
+      "status_accuracy": 0.6333
+    },
+    {
+      "field": "experience_required",
+      "value_accuracy": 0.3333,
+      "status_accuracy": 0.3333
+    },
+    {
+      "field": "stipend_or_funding",
+      "value_accuracy": 0.3333,
+      "status_accuracy": 1.0
+    }
+  ],
+  "all_fields": [
+    {
+      "field": "eligibility_notes",
+      "value_accuracy": 0.0,
+      "status_accuracy": 0.6667
+    },
+    {
+      "field": "scheme_type",
+      "value_accuracy": 0.1429,
+      "status_accuracy": 0.8571
+    },
+    {
+      "field": "target_beneficiaries",
+      "value_accuracy": 0.1429,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "benefit_amount",
+      "value_accuracy": 0.1429,
+      "status_accuracy": 0.7143
+    },
+    {
+      "field": "benefit_type",
+      "value_accuracy": 0.2381,
+      "status_accuracy": 0.9524
+    },
+    {
+      "field": "academic_criteria",
+      "value_accuracy": 0.2857,
+      "status_accuracy": 0.7143
+    },
+    {
+      "field": "domicile_criteria",
+      "value_accuracy": 0.2857,
+      "status_accuracy": 0.7143
+    },
+    {
+      "field": "required_documents",
+      "value_accuracy": 0.3,
+      "status_accuracy": 0.6333
+    },
+    {
+      "field": "experience_required",
+      "value_accuracy": 0.3333,
+      "status_accuracy": 0.3333
+    },
+    {
+      "field": "stipend_or_funding",
+      "value_accuracy": 0.3333,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "income_criteria",
+      "value_accuracy": 0.4286,
+      "status_accuracy": 0.8571
+    },
+    {
+      "field": "category_criteria",
+      "value_accuracy": 0.4286,
+      "status_accuracy": 0.8571
+    },
+    {
+      "field": "education_level",
+      "value_accuracy": 0.5,
+      "status_accuracy": 0.9
+    },
+    {
+      "field": "application_method",
+      "value_accuracy": 0.5714,
+      "status_accuracy": 0.8571
+    },
+    {
+      "field": "eligible_disciplines",
+      "value_accuracy": 0.6667,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "skills_required",
+      "value_accuracy": 0.6667,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "application_url",
+      "value_accuracy": 0.7,
+      "status_accuracy": 0.8
+    },
+    {
+      "field": "scheme_name",
+      "value_accuracy": 0.7143,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "implementing_authority",
+      "value_accuracy": 0.7143,
+      "status_accuracy": 0.9524
+    },
+    {
+      "field": "scheme_status",
+      "value_accuracy": 0.7143,
+      "status_accuracy": 0.619
+    },
+    {
+      "field": "age_criteria",
+      "value_accuracy": 0.7143,
+      "status_accuracy": 0.8571
+    },
+    {
+      "field": "start_date",
+      "value_accuracy": 0.8889,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "application_deadline",
+      "value_accuracy": 0.9,
+      "status_accuracy": 0.9
+    },
+    {
+      "field": "title",
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "organization",
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "opportunity_type",
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "location",
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "mode",
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "field": "duration",
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    }
+  ]
+}

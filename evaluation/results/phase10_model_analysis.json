@@ -1,0 +1,11 @@
+{
+  "model_policy": "Auto-discovery with Flash tier preference",
+  "discovered_models": [
+    "gemini-1.5-flash",
+    "gemini-2.0-flash",
+    "gemini-1.5-pro",
+    "gemini-2.0-flash-lite"
+  ],
+  "selected_model_tier": "gemini-1.5-flash / gemini-2.0-flash",
+  "fallback_model_tier": "gemini-2.0-flash-lite"
+}

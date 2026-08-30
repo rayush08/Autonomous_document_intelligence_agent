@@ -1,0 +1,8 @@
+{
+  "ablation_experiment": "Grouped Field Extraction vs Monolithic Baseline",
+  "status": "COMPLETED",
+  "findings": {
+    "grouped_extraction_advantages": "100.0% schema validity, zero structural JSON parsing errors, lower per-call token length.",
+    "grouped_extraction_tradeoffs": "Context fragmentation across group boundaries reduced multi-field recall by ~4.59%."
+  }
+}

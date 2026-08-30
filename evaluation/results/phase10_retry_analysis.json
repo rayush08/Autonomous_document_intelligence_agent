@@ -1,0 +1,5 @@
+{
+  "request_upper_bound_formula": "N_max = (G + (S-1) + F_recoverable) * R_transport = (4 + 2 + 3) * 12 = 108 HTTP requests max",
+  "retry_policy": "Exponential backoff with jitter and failover model pool",
+  "rate_limit_handling": "HTTP 429 backoff active with failover model preservation"
+}

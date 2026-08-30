@@ -1,0 +1,56 @@
+{
+  "Schema Validity Rate": {
+    "Run 1": 1.0,
+    "Run 2": 1.0,
+    "Run 3": 1.0,
+    "Mean": 1.0,
+    "Min": 1.0,
+    "Max": 1.0,
+    "StdDev": 0.0
+  },
+  "Field Extraction Accuracy": {
+    "Run 1": 0.5329,
+    "Run 2": 0.5449,
+    "Run 3": 0.5269,
+    "Mean": 0.5349,
+    "Min": 0.5269,
+    "Max": 0.5449,
+    "StdDev": 0.007483314773547889
+  },
+  "Verification Status Accuracy": {
+    "Run 1": 0.8563,
+    "Run 2": 0.8383,
+    "Run 3": 0.8563,
+    "Mean": 0.8503,
+    "Min": 0.8383,
+    "Max": 0.8563,
+    "StdDev": 0.008485281374238526
+  },
+  "Missing Information Accuracy": {
+    "Run 1": 0.8519,
+    "Run 2": 0.8148,
+    "Run 3": 0.8519,
+    "Mean": 0.8395333333333334,
+    "Min": 0.8148,
+    "Max": 0.8519,
+    "StdDev": 0.017489107721347284
+  },
+  "Hallucination Rate": {
+    "Run 1": 0.1481,
+    "Run 2": 0.1852,
+    "Run 3": 0.1481,
+    "Mean": 0.16046666666666667,
+    "Min": 0.1481,
+    "Max": 0.1852,
+    "StdDev": 0.017489107721347274
+  },
+  "Evidence Grounding Accuracy": {
+    "Run 1": 1.0,
+    "Run 2": 1.0,
+    "Run 3": 1.0,
+    "Mean": 1.0,
+    "Min": 1.0,
+    "Max": 1.0,
+    "StdDev": 0.0
+  }
+}

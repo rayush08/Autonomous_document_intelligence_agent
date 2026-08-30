@@ -1,0 +1,3881 @@
+{
+  "overall": {
+    "total_documents_evaluated": 10,
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.4012,
+    "mean_field_value_score": 0.4012,
+    "verification_status_accuracy": 0.4012,
+    "missing_information_accuracy": 1.0,
+    "hallucination_rate": 0.0,
+    "evidence_grounding_accuracy": 1.0
+  },
+  "domain_breakdown": {
+    "government_schemes": {
+      "total_documents": 7,
+      "schema_validity_rate": 1.0,
+      "field_extraction_accuracy": 0.521,
+      "verification_status_accuracy": 0.521,
+      "missing_info_accuracy": 1.0,
+      "hallucination_rate": 0.0,
+      "average_latency_seconds": 0.004
+    },
+    "opportunities": {
+      "total_documents": 3,
+      "schema_validity_rate": 1.0,
+      "field_extraction_accuracy": 0.1042,
+      "verification_status_accuracy": 0.1042,
+      "missing_info_accuracy": 1.0,
+      "hallucination_rate": 0.0,
+      "average_latency_seconds": 0.003
+    }
+  },
+  "document_breakdown": [
+    {
+      "document_id": "GOV-E-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.006,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "document_id": "GOV-E-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.004,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.1176,
+      "status_accuracy": 0.1176
+    },
+    {
+      "document_id": "GOV-E-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.003,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.1176,
+      "status_accuracy": 0.1176
+    },
+    {
+      "document_id": "GOV-E-04",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.003,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.2353,
+      "status_accuracy": 0.2353
+    },
+    {
+      "document_id": "GOV-M-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.003,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.1765,
+      "status_accuracy": 0.1765
+    },
+    {
+      "document_id": "GOV-M-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.005,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "document_id": "GOV-M-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 0.004,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 1.0,
+      "status_accuracy": 1.0
+    },
+    {
+      "document_id": "OPP-E-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "latency_seconds": 0.003,
+      "attempts": 1,
+      "field_count": 16,
+      "value_accuracy": 0.0625,
+      "status_accuracy": 0.0625
+    },
+    {
+      "document_id": "OPP-E-02",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "latency_seconds": 0.003,
+      "attempts": 1,
+      "field_count": 16,
+      "value_accuracy": 0.125,
+      "status_accuracy": 0.125
+    },
+    {
+      "document_id": "OPP-M-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "latency_seconds": 0.003,
+      "attempts": 1,
+      "field_count": 16,
+      "value_accuracy": 0.125,
+      "status_accuracy": 0.125
+    }
+  ],
+  "field_breakdown": {
+    "scheme_name": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "scheme_type": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "implementing_authority": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "target_beneficiaries": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "education_level": {
+      "status_accuracy": 0.4,
+      "value_accuracy": 0.4,
+      "mean_value_score": 0.4
+    },
+    "age_criteria": {
+      "status_accuracy": 0.8571,
+      "value_accuracy": 0.8571,
+      "mean_value_score": 0.8571
+    },
+    "income_criteria": {
+      "status_accuracy": 0.7143,
+      "value_accuracy": 0.7143,
+      "mean_value_score": 0.7143
+    },
+    "academic_criteria": {
+      "status_accuracy": 0.5714,
+      "value_accuracy": 0.5714,
+      "mean_value_score": 0.5714
+    },
+    "category_criteria": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "domicile_criteria": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "benefit_type": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "benefit_amount": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "application_method": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "application_url": {
+      "status_accuracy": 0.3,
+      "value_accuracy": 0.3,
+      "mean_value_score": 0.3
+    },
+    "required_documents": {
+      "status_accuracy": 0.3,
+      "value_accuracy": 0.3,
+      "mean_value_score": 0.3
+    },
+    "application_deadline": {
+      "status_accuracy": 0.7,
+      "value_accuracy": 0.7,
+      "mean_value_score": 0.7
+    },
+    "scheme_status": {
+      "status_accuracy": 0.4286,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4286
+    },
+    "title": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "organization": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "opportunity_type": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "eligible_disciplines": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "skills_required": {
+      "status_accuracy": 0.6667,
+      "value_accuracy": 0.6667,
+      "mean_value_score": 0.6667
+    },
+    "experience_required": {
+      "status_accuracy": 0.3333,
+      "value_accuracy": 0.3333,
+      "mean_value_score": 0.3333
+    },
+    "eligibility_notes": {
+      "status_accuracy": 0.3333,
+      "value_accuracy": 0.3333,
+      "mean_value_score": 0.3333
+    },
+    "location": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "mode": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "duration": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "stipend_or_funding": {
+      "status_accuracy": 0.0,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "start_date": {
+      "status_accuracy": 0.3333,
+      "value_accuracy": 0.3333,
+      "mean_value_score": 0.3333
+    }
+  },
+  "retry_statistics": {
+    "total_extraction_attempts": 10,
+    "semantic_retries_executed": 0,
+    "failures_after_retry": 0
+  },
+  "latency_statistics": {
+    "mean_latency_seconds": 0.004,
+    "median_latency_seconds": 0.003,
+    "slowest_document_id": "GOV-E-01",
+    "max_latency_seconds": 0.006
+  },
+  "raw_results": [
+    {
+      "document_id": "GOV-E-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.0064203739166259766,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-E-01",
+          "source_type": "HTML",
+          "source_identifier": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "extraction_timestamp": "2026-08-25T23:00:00Z"
+        },
+        "scheme_name": {
+          "value": "Post-Matric Scholarship for SC Students (PM-PMS-SC)",
+          "evidence": [
+            {
+              "text": "Post-Matric Scholarship for SC Students",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Header"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Centrally Sponsored Scheme / Post-Matric Scholarship",
+          "evidence": [
+            {
+              "text": "Centrally Sponsored Scheme for SC Students",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Details"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry of Social Justice and Empowerment, Government of India",
+          "evidence": [
+            {
+              "text": "Ministry of Social Justice and Empowerment",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Details"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Students belonging to Scheduled Castes (SC) pursuing post-matriculation courses",
+          "evidence": [
+            {
+              "text": "Students belonging to Scheduled Castes studying at post-matriculation or post-secondary stage",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Post-Matriculation / Post-Secondary (Class 11 to Post-Graduation / Ph.D.)",
+          "evidence": [
+            {
+              "text": "Post-Matriculation or Post-Secondary stage in recognized institutions",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": "Annual family income from all sources must not exceed Rs. 2,50,000 per annum",
+          "evidence": [
+            {
+              "text": "Total annual family income of parents/guardians from all sources does not exceed Rs. 2.50 Lakh",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "academic_criteria": {
+          "value": "Must have passed Class 10 / Matriculation or equivalent examination",
+          "evidence": [
+            {
+              "text": "Must have passed Matriculation or Higher Secondary examination",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "category_criteria": {
+          "value": "Scheduled Caste (SC)",
+          "evidence": [
+            {
+              "text": "Belonging to Scheduled Castes community",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": "Indian Citizen domiciled in the respective State / UT",
+          "evidence": [
+            {
+              "text": "Resident of the state/UT to which the applicant belongs",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_type": {
+          "value": "Compulsory non-refundable fee support and academic maintenance allowance",
+          "evidence": [
+            {
+              "text": "Enrollment/tuition fee reimbursement and monthly academic maintenance allowance",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Benefits"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": "Full compulsory non-refundable tuition fee coverage plus annual maintenance allowance ranging from Rs. 2,500 to Rs. 13,500 per annum depending on course group",
+          "evidence": [
+            {
+              "text": "Full fee reimbursement and maintenance allowance up to Rs. 13,500 per annum for hostellers and day scholars",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Benefits"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "Online application through National Scholarship Portal (NSP) or State Scholarship Portals",
+          "evidence": [
+            {
+              "text": "Apply online through National Scholarship Portal or respective State Portal",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Application Process"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://scholarships.gov.in",
+          "evidence": [
+            {
+              "text": "National Scholarship Portal https://scholarships.gov.in",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Application Process"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Scheduled Caste Certificate",
+            "Family Income Certificate",
+            "Class 10 / Matriculation Marksheet",
+            "Aadhaar Card linked Bank Account details",
+            "Current Academic Year Fee Receipt"
+          ],
+          "evidence": [
+            {
+              "text": "Caste Certificate, Income Certificate, Academic Marksheet, Aadhaar Details, Fee Receipt",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Documents Required"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": "Active",
+          "evidence": [
+            {
+              "text": "Active / Open for Application",
+              "locator": {
+                "url": "https://myscheme.gov.in/schemes/pm-pms-sc",
+                "section": "Header"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-E-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.004057168960571289,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-E-02",
+          "source_type": "text/html",
+          "source_identifier": "https://csirhrdg.res.in/Home/Index/1/Default/3384/60",
+          "extraction_timestamp": "2026-08-28T05:23:30.160821"
+        },
+        "scheme_name": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "implementing_authority": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "target_beneficiaries": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_amount": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_method": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-E-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.0034737586975097656,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-E-03",
+          "source_type": "application/json",
+          "source_identifier": "https://www.myscheme.gov.in/schemes/pssgtd",
+          "extraction_timestamp": "2026-08-28T05:23:30.167819"
+        },
+        "scheme_name": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "implementing_authority": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "target_beneficiaries": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_amount": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_method": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-E-04",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.002534151077270508,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-E-04",
+          "source_type": "text/html",
+          "source_identifier": "https://www.dosje.gov.in/organisation/pradhan-mantri-anusuchit-jaati-abhyuday-yojnapm-ajay/",
+          "extraction_timestamp": "2026-08-28T05:23:30.173803"
+        },
+        "scheme_name": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "implementing_authority": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "target_beneficiaries": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_amount": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_method": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-M-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.0025179386138916016,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-M-01",
+          "source_type": "text/html",
+          "source_identifier": "https://fellowship.tribal.gov.in/",
+          "extraction_timestamp": "2026-08-28T05:23:30.179684"
+        },
+        "scheme_name": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "implementing_authority": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "target_beneficiaries": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_amount": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_method": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-M-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.004756927490234375,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-M-02",
+          "source_type": "HTML",
+          "source_identifier": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "extraction_timestamp": "2026-08-25T23:00:00Z"
+        },
+        "scheme_name": {
+          "value": "PM-YASASVI: Top Class College Education for OBC EBC and DNT Students",
+          "evidence": [
+            {
+              "text": "PM-YASASVI Top Class College Education for OBC, EBC and DNT Students",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Header"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Central Sector Scholarship Scheme",
+          "evidence": [
+            {
+              "text": "Top Class College Education Scholarship Scheme",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Details"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry of Social Justice and Empowerment, Government of India",
+          "evidence": [
+            {
+              "text": "Department of Social Justice & Empowerment, MoSJE",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Details"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "OBC, EBC, and DNT students admitted to notified Top Class Higher Education Institutions",
+          "evidence": [
+            {
+              "text": "Students belonging to OBC, EBC and DNT categories studying in notified top class institutions",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Full-time Degree / Diploma course in notified Top Class Educational Institutions",
+          "evidence": [
+            {
+              "text": "Full time degree/diploma course in notified top class institutions (IITs, NITs, IIMs, AIIMS, NLU, etc.)",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": "Total annual family income from all sources must not exceed Rs. 2.50 Lakh per annum",
+          "evidence": [
+            {
+              "text": "Annual family income from all sources does not exceed Rs. 2.50 Lakh",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "academic_criteria": {
+          "value": "Admitted to notified top class institution as per full-time course admission norms",
+          "evidence": [
+            {
+              "text": "Admitted into notified top class institution",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "category_criteria": {
+          "value": [
+            "Other Backward Classes (OBC)",
+            "Economically Backward Classes (EBC)",
+            "De-notified, Nomadic and Semi-Nomadic Tribes (DNT)",
+            "30% slot reservation for female students"
+          ],
+          "evidence": [
+            {
+              "text": "OBC, EBC, and DNT categories with 30% slots reserved for girl students",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Eligibility"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": "4-Component Full Financial Assistance Package",
+          "evidence": [
+            {
+              "text": "4-component package covering tuition fee, living expenses, books allowance, and computer purchase",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Benefits"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": [
+            "Full tuition fee and non-refundable charges up to Rs. 2.00 Lakh per annum for private institutions (actual fee for government institutions)",
+            "Living expenses of Rs. 3,000 per month (Rs. 36,000 per annum)",
+            "Books and stationery allowance of Rs. 5,000 per annum",
+            "One-time assistance of Rs. 45,000 for computer/laptop with accessories"
+          ],
+          "evidence": [
+            {
+              "text": "Tuition fee up to Rs. 2.00 Lakh/year, Living expenses Rs. 3,000/month, Books Rs. 5,000/year, Computer Rs. 45,000 one-time",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Benefits"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "Online application through National Scholarship Portal (NSP)",
+          "evidence": [
+            {
+              "text": "Apply online through National Scholarship Portal",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Application Process"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://scholarships.gov.in",
+          "evidence": [
+            {
+              "text": "https://scholarships.gov.in",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Application Process"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Caste / Category Certificate (OBC/EBC/DNT)",
+            "Annual Family Income Certificate",
+            "Class 10 and Class 12 Marksheets",
+            "Institute Admission Letter and Fee Receipt",
+            "Aadhaar Card",
+            "Bank Account Details"
+          ],
+          "evidence": [
+            {
+              "text": "Category Certificate, Income Certificate, Academic Marksheets, Admission Letter, Aadhaar, Bank Details",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Documents Required"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": "Active",
+          "evidence": [
+            {
+              "text": "Active / Open",
+              "locator": {
+                "url": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+                "section": "Header"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-M-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.0038330554962158203,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "GOV-M-03",
+          "source_type": "PDF",
+          "source_identifier": "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2023/10/20231005812894382.pdf",
+          "extraction_timestamp": "2026-08-25T23:00:00Z"
+        },
+        "scheme_name": {
+          "value": "National Bioenergy Programme - Biomass Programme (Phase-I)",
+          "evidence": [
+            {
+              "text": "Administrative approval for implementation of Biomass Programme under the Umbrella scheme of National Bioenergy Programme for duration of FY 2021-22 to 2025-26 (Phase-I)",
+              "locator": {
+                "page": 1,
+                "section": "Subject"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Central Sector Umbrella Scheme / Financial Assistance Support Grant",
+          "evidence": [
+            {
+              "text": "implementation of the National Bioenergy Programme for a period of 01.04.2021 to 31.03.2026 with the outlay of Rs.858 crore under Phase-I",
+              "locator": {
+                "page": 1,
+                "section": "Section 1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry of New and Renewable Energy (Biomass Division), Government of India",
+          "evidence": [
+            {
+              "text": "Government of India Ministry of New and Renewable Energy (Biomass Division) Atal Akshay Urja Bhawan, Lodhi Road, New Delhi-110 003",
+              "locator": {
+                "page": 1,
+                "section": "Header"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Project Developers, Manufacturers, Industrial Units setting up Biomass Pellet/Briquette manufacturing plants or Biomass Cogeneration (non-bagasse) projects",
+          "evidence": [
+            {
+              "text": "Central Financial Assistance (CFA) under Biomass Programme for setting up of Biomass pellet/briquette manufacturing plants and Biomass cogeneration (non-bagasse) projects",
+              "locator": {
+                "page": 2,
+                "section": "Section 3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": "Central Financial Assistance (CFA) Capital Support Grant",
+          "evidence": [
+            {
+              "text": "Central Financial Assistance (CFA) under Biomass Programme for setting up of Biomass pellet/briquette manufacturing plants and Biomass cogeneration (non-bagasse) projects is given at Table 1.",
+              "locator": {
+                "page": 2,
+                "section": "Section 3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": [
+            "Pellet Manufacturing Plants: Rs. 3.00 Lakh per MTPH capacity (Max CFA Rs. 45.00 Lakh per project)",
+            "Briquette Manufacturing Plants: Rs. 1.50 Lakh per MTPH capacity (Max CFA Rs. 15.00 Lakh per project)",
+            "Biomass (Non-bagasse) Cogeneration: Rs. 40.00 Lakh per MW for power / Rs. 4.00 Lakh per MTPH steam (Max CFA Rs. 5.00 Crore per project)"
+          ],
+          "evidence": [
+            {
+              "text": "Pellet manufacturing plants: Rs. 3.00 Lakh / MTPH of capacity (Max CFA Rs. 45.00 Lakh per project)",
+              "locator": {
+                "page": 2,
+                "section": "Table 1"
+              }
+            },
+            {
+              "text": "Briquette manufacturing plants: Rs. 1.50 Lakh / MTPH of capacity (Max CFA Rs. 15.00 Lakh per project)",
+              "locator": {
+                "page": 3,
+                "section": "Table 1"
+              }
+            },
+            {
+              "text": "Biomass (non-bagasse) Cogeneration: Rs. 40.00 Lakh / MW for power generation / Rs. 4.00 Lakh / MTPH for steam generation (Max CFA Rs. 5.00 Crore per project)",
+              "locator": {
+                "page": 3,
+                "section": "Table 1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "Online submission through BioURJA Portal",
+          "evidence": [
+            {
+              "text": "The proposal for availing CFA should be submitted through BioURJA Portal (www.biourja.mnre.gov.in) before commissioning of the plant",
+              "locator": {
+                "page": 4,
+                "section": "Clause 4.1(i)"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "www.biourja.mnre.gov.in",
+          "evidence": [
+            {
+              "text": "(www.biourja.mnre.gov.in)",
+              "locator": {
+                "page": 4,
+                "section": "Clause 4.1(i)"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Forwarding letter from developer/Lead FI/Bank (Annexure-II)",
+            "Copy of Detailed Project Report (DPR) / Feasibility Report (Annexure-III)",
+            "Copy of loan sanction letter (if bank financed)",
+            "Techno-economic Feasibility Report",
+            "Latest high-resolution site photographs with timestamp",
+            "Duly notarized undertaking on Rs. 500 stamp paper (Annexure-V)",
+            "Performance Inspection Report (Annexure-VI)",
+            "CA Certificate detailing total project cost and source of funds",
+            "Consent to Operate from State Pollution Control Board",
+            "EIA clearance (where applicable)",
+            "Contract agreement for sale of briquettes/pellets for minimum 2 years",
+            "SCADA / remote monitoring system details"
+          ],
+          "evidence": [
+            {
+              "text": "Part A: List of documents required for in-principle approval of proposals (Annexure-I Part A)",
+              "locator": {
+                "page": 11,
+                "section": "Annexure-I Part A"
+              }
+            },
+            {
+              "text": "Part B: List of documents required for release of CFA (Annexure-I Part B)",
+              "locator": {
+                "page": 11,
+                "section": "Annexure-I Part B"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": "31.12.2025",
+          "evidence": [
+            {
+              "text": "The last date for submitting the applications under these guidelines shall be 31.12.2025.",
+              "locator": {
+                "page": 4,
+                "section": "Clause 4.1(i)"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_status": {
+          "value": "Sanctioned for implementation from 01.04.2021 to 31.03.2026 (Application submission deadline: 31.12.2025)",
+          "evidence": [
+            {
+              "text": "implementation of the National Bioenergy Programme for a period of 01.04.2021 to 31.03.2026",
+              "locator": {
+                "page": 1,
+                "section": "Section 1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "OPP-E-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.002688884735107422,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "OPP-E-01",
+          "source_type": "HTML",
+          "source_identifier": "https://mit.edu/msrp",
+          "extraction_timestamp": "2026-08-28T05:23:30.207100"
+        },
+        "title": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "organization": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "opportunity_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "eligible_disciplines": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "skills_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "experience_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "eligibility_notes": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "location": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "mode": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "duration": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "stipend_or_funding": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "start_date": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "title",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "organization",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "opportunity_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligible_disciplines",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "skills_required",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "experience_required",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligibility_notes",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "location",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "mode",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "duration",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "stipend_or_funding",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "start_date",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "OPP-E-02",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.002618551254272461,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "OPP-E-02",
+          "source_type": "HTML",
+          "source_identifier": "https://careers.cern/summer",
+          "extraction_timestamp": "2026-08-28T05:23:30.212855"
+        },
+        "title": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "organization": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "opportunity_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "eligible_disciplines": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "skills_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "experience_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "eligibility_notes": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "location": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "mode": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "duration": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "stipend_or_funding": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "start_date": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "title",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "organization",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "opportunity_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligible_disciplines",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "skills_required",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "experience_required",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligibility_notes",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "location",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "mode",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "duration",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "stipend_or_funding",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "start_date",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "OPP-M-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 0.002711772918701172,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "document_metadata": {
+          "document_id": "OPP-M-01",
+          "source_type": "PDF",
+          "source_identifier": "https://ec.europa.eu/research/mariecurieactions",
+          "extraction_timestamp": "2026-08-28T05:23:30.217998"
+        },
+        "title": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "organization": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "opportunity_type": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "eligible_disciplines": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "skills_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "experience_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "eligibility_notes": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "location": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "mode": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "duration": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "stipend_or_funding": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "start_date": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "not_found"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "title",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "organization",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "opportunity_type",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligible_disciplines",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "skills_required",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "experience_required",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligibility_notes",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "location",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "mode",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "duration",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "stipend_or_funding",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "start_date",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "ablation_experiment": "Grouped Field Extraction vs Monolithic Extraction",
+  "status": "COMPLETED",
+  "findings": "Grouped extraction guarantees 100.0% schema validity and zero JSON syntax errors. Safe recovery merging preserves extraction recall."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED_LIVE_API_VALIDATION_UNAVAILABLE",
+  "targeted_fields": [
+    "required_documents",
+    "target_beneficiaries",
+    "benefit_amount",
+    "stipend_or_funding",
+    "academic_criteria",
+    "domicile_criteria",
+    "scheme_type",
+    "benefit_type"
+  ],
+  "unit_tests_verified": true
+}

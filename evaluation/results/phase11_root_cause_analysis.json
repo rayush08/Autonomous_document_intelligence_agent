@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED_LIVE_API_VALIDATION_UNAVAILABLE",
+  "primary_root_cause": "Safe recovery merging defect in LLMExtractor.recover_target_field where targeted single-field recovery returning null overwrote valid attempt-0 extractions.",
+  "secondary_root_cause": "Context fragmentation across group boundaries on multi-page PDF documents."
+}

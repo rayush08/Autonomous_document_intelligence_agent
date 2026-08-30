@@ -1,0 +1,240 @@
+{
+  "total_fields": 29,
+  "regressed_fields_count": 0,
+  "improved_fields_count": 26,
+  "unchanged_fields_count": 3,
+  "matrix": [
+    {
+      "field": "eligibility_notes",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.0,
+      "delta": 0.0,
+      "classification": "UNCHANGED",
+      "root_cause": "Complex Clause Paraphrasing"
+    },
+    {
+      "field": "scheme_type",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.0,
+      "delta": 0.0,
+      "classification": "UNCHANGED",
+      "root_cause": "Categorical Taxonomy Mismatch"
+    },
+    {
+      "field": "target_beneficiaries",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.0,
+      "delta": 0.0,
+      "classification": "UNCHANGED",
+      "root_cause": "Partial List Incompleteness / Context Truncation"
+    },
+    {
+      "field": "benefit_type",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.0953,
+      "delta": 0.0953,
+      "classification": "IMPROVED",
+      "root_cause": "Categorical Taxonomy Mismatch"
+    },
+    {
+      "field": "benefit_amount",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.1429,
+      "delta": 0.1429,
+      "classification": "IMPROVED",
+      "root_cause": "Monetary Tier Breakdown Difference"
+    },
+    {
+      "field": "required_documents",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.2667,
+      "delta": 0.2667,
+      "classification": "IMPROVED",
+      "root_cause": "Partial List Incompleteness / Context Truncation"
+    },
+    {
+      "field": "academic_criteria",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.2857,
+      "delta": 0.2857,
+      "classification": "IMPROVED",
+      "root_cause": "Complex Clause Paraphrasing"
+    },
+    {
+      "field": "eligible_disciplines",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.3333,
+      "delta": 0.3333,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "experience_required",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.3333,
+      "delta": 0.3333,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "skills_required",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.3333,
+      "delta": 0.3333,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "stipend_or_funding",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.3333,
+      "delta": 0.3333,
+      "classification": "IMPROVED",
+      "root_cause": "Monetary Tier Breakdown Difference"
+    },
+    {
+      "field": "category_criteria",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.381,
+      "delta": 0.381,
+      "classification": "IMPROVED",
+      "root_cause": "Complex Clause Paraphrasing"
+    },
+    {
+      "field": "domicile_criteria",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.381,
+      "delta": 0.381,
+      "classification": "IMPROVED",
+      "root_cause": "Complex Clause Paraphrasing"
+    },
+    {
+      "field": "education_level",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.4,
+      "delta": 0.4,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "income_criteria",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.4286,
+      "delta": 0.4286,
+      "classification": "IMPROVED",
+      "root_cause": "Monetary Tier Breakdown Difference"
+    },
+    {
+      "field": "application_method",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.4762,
+      "delta": 0.4762,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "scheme_status",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.4762,
+      "delta": 0.4762,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "application_url",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.7,
+      "delta": 0.7,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "age_criteria",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.7143,
+      "delta": 0.7143,
+      "classification": "IMPROVED",
+      "root_cause": "Complex Clause Paraphrasing"
+    },
+    {
+      "field": "implementing_authority",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.7619,
+      "delta": 0.7619,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "scheme_name",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.8095,
+      "delta": 0.8095,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "application_deadline",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.8667,
+      "delta": 0.8667,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "duration",
+      "phase6_baseline": 0.0,
+      "phase9_result": 0.8889,
+      "delta": 0.8889,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "location",
+      "phase6_baseline": 0.0,
+      "phase9_result": 1.0,
+      "delta": 1.0,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "mode",
+      "phase6_baseline": 0.0,
+      "phase9_result": 1.0,
+      "delta": 1.0,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "opportunity_type",
+      "phase6_baseline": 0.0,
+      "phase9_result": 1.0,
+      "delta": 1.0,
+      "classification": "IMPROVED",
+      "root_cause": "Categorical Taxonomy Mismatch"
+    },
+    {
+      "field": "organization",
+      "phase6_baseline": 0.0,
+      "phase9_result": 1.0,
+      "delta": 1.0,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "start_date",
+      "phase6_baseline": 0.0,
+      "phase9_result": 1.0,
+      "delta": 1.0,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    },
+    {
+      "field": "title",
+      "phase6_baseline": 0.0,
+      "phase9_result": 1.0,
+      "delta": 1.0,
+      "classification": "IMPROVED",
+      "root_cause": "Model Paraphrase"
+    }
+  ]
+}

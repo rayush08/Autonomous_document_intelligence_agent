@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-08-28T04:46:44Z",
+  "status": "PARTIALLY_VALIDATED",
+  "architectural_audit": {
+    "integration_gap_identified": true,
+    "previous_state": "LLMExtractor.extract() was executing build_document_extraction_prompt() (monolithic 17-field single prompt).",
+    "fix_implemented": "Implemented extract_grouped_fields() in LLMExtractor to execute evidence-first domain group prompts (GOVERNMENT_SCHEME_GROUPS / OPPORTUNITY_GROUPS).",
+    "regression_tests_added": "tests/test_grouped_extraction.py",
+    "unit_tests_status": "115/115 passed (compileall exit code 0)"
+  },
+  "fresh_phase5_live_metrics": {
+    "runs": {
+      "phase5_1": {
+        "schema_validity_rate": 1.0,
+        "field_extraction_accuracy": 0.5329,
+        "verification_status_accuracy": 0.8563,
+        "missing_information_accuracy": 0.8519,
+        "hallucination_rate": 0.1481,
+        "evidence_grounding_accuracy": 1.0
+      },
+      "phase5_2": {
+        "schema_validity_rate": 1.0,
+        "field_extraction_accuracy": 0.5449,
+        "verification_status_accuracy": 0.8383,
+        "missing_information_accuracy": 0.8148,
+        "hallucination_rate": 0.1852,
+        "evidence_grounding_accuracy": 1.0
+      },
+      "phase5_3": {
+        "schema_validity_rate": 1.0,
+        "field_extraction_accuracy": 0.5269,
+        "verification_status_accuracy": 0.8563,
+        "missing_information_accuracy": 0.8519,
+        "hallucination_rate": 0.1481,
+        "evidence_grounding_accuracy": 1.0
+      }
+    },
+    "statistical_summary": {
+      "schema_validity_rate": {"mean": 1.0, "min": 1.0, "max": 1.0, "std": 0.0},
+      "field_extraction_accuracy": {"mean": 0.5349, "min": 0.5269, "max": 0.5449, "std": 0.0075},
+      "verification_status_accuracy": {"mean": 0.8503, "min": 0.8383, "max": 0.8563, "std": 0.0085},
+      "missing_information_accuracy": {"mean": 0.8395, "min": 0.8148, "max": 0.8519, "std": 0.0175},
+      "hallucination_rate": {"mean": 0.1605, "min": 0.1481, "max": 0.1852, "std": 0.0175},
+      "evidence_grounding_accuracy": {"mean": 1.0, "min": 1.0, "max": 1.0, "std": 0.0}
+    }
+  },
+  "historical_phase3_live_baseline": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy_mean": 0.5429,
+    "verification_status_accuracy_mean": 0.8583,
+    "missing_information_accuracy_mean": 0.8148,
+    "hallucination_rate_mean": 0.1852,
+    "evidence_grounding_accuracy_mean": 1.0
+  }
+}

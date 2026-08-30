@@ -1,0 +1,30 @@
+{
+  "phase": "Phase 8 Live Validation",
+  "git_commit": "bcdbd37",
+  "document_ids": [
+    "GOV-E-01",
+    "GOV-E-02",
+    "GOV-E-03",
+    "GOV-E-04",
+    "GOV-M-01",
+    "GOV-M-02",
+    "GOV-M-03",
+    "OPP-E-01",
+    "OPP-E-02",
+    "OPP-M-01"
+  ],
+  "total_documents": 10,
+  "extraction_configuration": {
+    "grouped_extraction_enabled": true,
+    "max_retries": 2,
+    "max_model_failovers": 3,
+    "evidence_verification_enabled": true,
+    "semantic_completeness_enabled": true,
+    "request_upper_bound": 108
+  },
+  "evaluator_configuration": {
+    "exact_numeric_token_matching": true,
+    "currency_normalization": true,
+    "frequency_unit_normalization": true
+  }
+}

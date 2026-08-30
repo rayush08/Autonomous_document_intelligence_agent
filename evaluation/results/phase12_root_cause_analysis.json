@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED_LIVE_API_VALIDATION_UNAVAILABLE",
+  "primary_defect": "Overwriting non-null attempt-0 fields with null on failed recovery attempts.",
+  "resolution": "Safe recovery merging in LLMExtractor.recover_target_field."
+}

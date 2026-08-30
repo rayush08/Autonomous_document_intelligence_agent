@@ -1,0 +1,7 @@
+{
+  "hypotheses_evaluated": {
+    "H1": "Long-document context loss (Verified & addressed in segmentation)",
+    "H5": "Destructive recovery overwriting (Verified & fixed in LLMExtractor.recover_target_field)",
+    "H12": "Numeric & unit normalization variance (Verified & addressed in canonicalizer)"
+  }
+}

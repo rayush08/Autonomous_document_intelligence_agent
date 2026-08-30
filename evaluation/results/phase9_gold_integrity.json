@@ -1,0 +1,17 @@
+{
+  "total_gold_fixtures": 10,
+  "schema_validation_status": "10/10 Valid",
+  "gold_fixtures_unintentionally_modified": false,
+  "sha256_manifest": {
+    "GOV-E-01.json": "4cd82af98250be6be9889628b9138c58cd0e137c81dbbe8da15c3e38759f0d7f",
+    "GOV-E-02.json": "afc3f4af5d8ad6bdefb8b32149d4da2c011d716ddddf3cb109e41f258c1df361",
+    "GOV-E-03.json": "4b663118cbb3725afd42b5923f7451be11eb31d3290ebbd0c38787045f8ec624",
+    "GOV-E-04.json": "959506809d36d52d029738878d9beffd4fbc3b34dc42928769747e26f9ef3359",
+    "GOV-M-01.json": "730bb5854d2f16e5e5ac0f3bf39267123d5ffc80d547717edb393edef8d00069",
+    "GOV-M-02.json": "244b596c166aa072e39f54cdc775672c89b1ade246f39ca7e67481cf925dc341",
+    "GOV-M-03.json": "c2ce258801430300087255598b7cbff87740cd3442c4d998fb5743d35fe8caa6",
+    "OPP-E-01.json": "63606630f024c04fb48be4305b642cf4261a356bdd0c6d81d2d7771fac0fc78b",
+    "OPP-E-02.json": "c10eb370f804ce0da2210c262e58830e98f76860660e7222c3e1eed42c8634c0",
+    "OPP-M-01.json": "a6b0fce41620b1eb04b930f0dba7d5c88d3d61741fedf72715e30c732ba77663"
+  }
+}

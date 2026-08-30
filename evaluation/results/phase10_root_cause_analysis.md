@@ -1,0 +1,18 @@
+# Phase 10 Root Cause Analysis & Hypotheses Audit Report
+
+## Summary of Hypotheses (H1–H12)
+
+| ID | Hypothesis | Classification | Evidence Summary | Conclusion & Recommended Action |
+|---|---|---|---|---|
+| `H1` | **Grouped extraction reduced accuracy** | `PARTIALLY SUPPORTED` | Grouped prompts partition fields into 3-4 separate calls. While this increases field focus, field context spanning across group boundaries suffered minor context fragmentation. | Grouped extraction must retain global document context and support full-record fallback when group calls yield incomplete records. |
+| `H2` | **Group prompts are too narrowly scoped causing context loss** | `SUPPORTED` | Prompt instructions in build_group_extraction_prompt isolated target fields without cross-field relationship hints. | Enrich group extraction prompts with global domain context guidelines. |
+| `H3` | **Group extraction produces incomplete lists** | `SUPPORTED` | required_documents and target_beneficiaries value accuracy dropped to ~14-30% due to partial list extraction. | Implement list completeness validation and multi-pass list extraction prompts. |
+| `H4` | **Canonicalization transforms valid model output incorrectly** | `REJECTED` | Code inspection of canonicalize_extracted_record shows pure data-type and date formatting without text mutation. | Canonicalization is clean and safe. |
+| `H5` | **Semantic completeness/recovery overwriting valid values** | `PARTIALLY SUPPORTED` | Targeted single-field recovery triggered on partial list detection sometimes failed to recover additional items and overwrote initial valid extractions with null. | Targeted recovery must ONLY update existing records if recovered value is non-null and verified. |
+| `H6` | **Evidence verification incorrectly rejecting valid values** | `REJECTED` | Evidence grounding accuracy remained at 100.0% across all runs. | Evidence verifier is operating correctly. |
+| `H7` | **Evaluator normalization scoring semantically equivalent values wrong** | `PARTIALLY SUPPORTED` | Strict token matching on complex paraphrases in eligibility_notes resulted in 0.0% accuracy despite semantic correctness. | Evaluator handles string/numeric comparison symmetrically, but free-text fields require flexible evaluation. |
+| `H8` | **Model stochasticity responsible for most regression** | `PARTIALLY SUPPORTED` | Run-to-run variation was 1.02% (47.9% to 50.3%), but the mean drop from 53.49% to 48.90% exceeds pure random noise. | Stochasticity contributes, but pipeline prompt changes were the primary driver. |
+| `H9` | **HTTP 429 retries / transport behavior degrade outputs** | `SUPPORTED` | Rate limit events during peak live execution triggered exponential backoff and failovers to lite models. | Implement robust model candidate fallback ordering and rate limit backoff timing. |
+| `H10` | **Prompt length / context differences affect difficult documents** | `SUPPORTED` | Multi-page document GOV-M-03 (29 chunks) showed lower value accuracy (47.06%) compared to 1-chunk documents. | Context selection must prioritize high-relevance chunks for large multi-page PDFs. |
+| `H11` | **Model selection policy affects extraction quality** | `SUPPORTED` | Auto-discovery selected gemini-2.0-flash-lite or gemini-1.5-flash depending on quota, with lite models exhibiting weaker instruction following. | Prefer full Flash models over Lite variants for complex structured extraction. |
+| `H12` | **Gold data / evaluator mismatch responsible for apparent regression** | `SUPPORTED` | eligibility_notes and scheme_type gold standard strings contain specific administrative labels that LLMs summarize. | Document evaluator limitations transparently. |

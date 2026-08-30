@@ -1,0 +1,279 @@
+{
+  "document_id": "GOV-E-01",
+  "model_provider": "gemini-flash-lite-latest",
+  "timestamp": "2026-08-28T03:21:43.375481",
+  "schema_valid": true,
+  "audit_results": {
+    "total_fields": 17,
+    "verified_fields": 16,
+    "not_found_fields": 1
+  },
+  "extracted_record": {
+    "scheme_name": {
+      "value": "Post-Matric Scholarship for SC students",
+      "evidence": [
+        {
+          "text": "SCHEME NAME: Post-Matric Scholarship for SC students",
+          "locator": {
+            "section": "GOV-E-01-sec1"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "scheme_type": {
+      "value": "Education & Learning",
+      "evidence": [
+        {
+          "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+          "locator": {
+            "section": "GOV-E-01-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "implementing_authority": {
+      "value": "Ministry Of Social Justice and Empowerment",
+      "evidence": [
+        {
+          "text": "IMPLEMENTING AUTHORITY: Ministry Of Social Justice and Empowerment",
+          "locator": {
+            "section": "GOV-E-01-sec2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "target_beneficiaries": {
+      "value": "SC students from economically weaker families at the post-matriculation or post-secondary level",
+      "evidence": [
+        {
+          "text": "The objective of the scheme is to increase the Gross Enrolment Ratio of SC students in higher education by providing financial assistance to students from economically weaker families at the post-matriculation or post-secondary level",
+          "locator": {
+            "section": "GOV-E-01-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "education_level": {
+      "value": "Post-matriculation or post-secondary level",
+      "evidence": [
+        {
+          "text": "providing financial assistance to students from economically weaker families at the post-matriculation or post-secondary level",
+          "locator": {
+            "section": "GOV-E-01-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "age_criteria": {
+      "value": "The ceiling on age limit for admission as a regular student in different classes should be decided by the concerned institutions.",
+      "evidence": [
+        {
+          "text": "The ceiling on age limit for admission as a regular student in different classes should be decided by the concerned institutions.",
+          "locator": {
+            "section": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "income_criteria": {
+      "value": "Parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+      "evidence": [
+        {
+          "text": "Scholarships will be paid to students whose parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+          "locator": {
+            "section": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "academic_criteria": {
+      "value": "Passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education",
+      "evidence": [
+        {
+          "text": "Only candidates who belong to Scheduled Castes and have passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education are eligible.",
+          "locator": {
+            "section": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "category_criteria": {
+      "value": [
+        "Scheduled Castes"
+      ],
+      "evidence": [
+        {
+          "text": "Only candidates who belong to Scheduled Castes and have passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education are eligible.",
+          "locator": {
+            "section": "GOV-E-01-sec5"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "domicile_criteria": {
+      "value": "Indian nationals only, selected by the State Government/Union Territory to which the applicant actually belongs (permanently settled or domiciled)",
+      "evidence": [
+        {
+          "text": "The scholarships are open to Indian nationals only.",
+          "locator": {
+            "section": "GOV-E-01-sec5"
+          }
+        },
+        {
+          "text": "the awardees are selected by the State Government/Union Territory to which the applicant actually belongs (i.e. the State/UT in which permanently settled or domiciled)",
+          "locator": {
+            "section": "GOV-E-01-sec4"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefit_type": {
+      "value": "Financial assistance / Scholarship",
+      "evidence": [
+        {
+          "text": "providing financial assistance to students from economically weaker families at the post-matriculation or post-secondary level",
+          "locator": {
+            "section": "GOV-E-01-sec3"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "benefit_amount": {
+      "value": [
+        "Group-1 Degree and post Graduate Level professional courses: Hostellers ₹ 13,000/- yearly, Day Scholars ₹ 7,000/- yearly",
+        "Group-2 Other Professional Courses leading to Degree, Diploma, Certificate: Hostellers ₹ 9,500/- yearly, Day Scholars ₹ 6,500/- yearly",
+        "Group-3 Graduate and Post Graduate courses not covered under group 1 & group II: Hostellers ₹ 6,000/- yearly, Day Scholars ₹ 3,000/- yearly",
+        "Group-4 All post matriculation (Post Class X level non-degree courses: Hostellers ₹ 4,000/- yearly, Day Scholars ₹ 2,500/- yearly",
+        "Ten percent extra allowances shall be provided for Divyang students."
+      ],
+      "evidence": [
+        {
+          "text": "Group-1 Degree and post Graduate Level professional courses - Hostellers (Yearly): ₹ 13,000/- - Day Scholars ( Yearly): ₹ 7,000/-",
+          "locator": {
+            "section": "GOV-E-01-sec6"
+          }
+        },
+        {
+          "text": "Group-2: Other Professional Courses leading to Degree, Diploma, Certificate - Hostellers (Yearly): ₹ 9,500/- - Day Scholars ( Yearly): ₹ 6,500/-",
+          "locator": {
+            "section": "GOV-E-01-sec6"
+          }
+        },
+        {
+          "text": "Group-3 Graduate and Post Graduate courses not covered under group 1 & group II - Hostellers (Yearly): ₹ 6,000/- - Day Scholars ( Yearly): ₹ 3,000/-",
+          "locator": {
+            "section": "GOV-E-01-sec6"
+          }
+        },
+        {
+          "text": "Group-4: All post matriculation (Post Class X level non-degree courses. - Hostellers (Yearly): ₹ 4,000/- - Day Scholars ( Yearly): ₹ 2,500/-",
+          "locator": {
+            "section": "GOV-E-01-sec6"
+          }
+        },
+        {
+          "text": "Ten percent extra allowances shall be provided for Divyang students.",
+          "locator": {
+            "section": "GOV-E-01-sec6"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_method": {
+      "value": "1. Applicant must register them self on NSP portal. 2. Login with their credentials and apply.",
+      "evidence": [
+        {
+          "text": "1. Applicant must register them self on NSP portal.\n2. Login with their credentials and apply.",
+          "locator": {
+            "section": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_url": {
+      "value": "https://scholarships.gov.in/",
+      "evidence": [
+        {
+          "text": "URL :https://scholarships.gov.in/",
+          "locator": {
+            "section": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "required_documents": {
+      "value": [
+        "Photograph",
+        "Academic Certificate",
+        "Caste Certificate",
+        "Income proof",
+        "Domicile Certificate",
+        "Bank Account Details",
+        "Aadhaar Card"
+      ],
+      "evidence": [
+        {
+          "text": "Photograph, Academic Certificate, Caste Certificate, Income proof, Domicile Certificate, Bank Account Details, Aadhaar Card",
+          "locator": {
+            "section": "GOV-E-01-sec8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "verification_status": "verified"
+    },
+    "application_deadline": {
+      "value": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "verification_status": "not_found"
+    },
+    "scheme_status": {
+      "value": "Active",
+      "evidence": [
+        {
+          "text": "This is applicable to all the students who are currently beneficiaries of the scheme as well as fresh admissions.",
+          "locator": {
+            "section": "GOV-E-01-sec4"
+          }
+        }
+      ],
+      "confidence": 0.8,
+      "verification_status": "verified"
+    },
+    "document_metadata": {
+      "document_id": "GOV-E-01",
+      "source_type": "HTML",
+      "source_identifier": "https://myscheme.gov.in/schemes/pm-pms-sc",
+      "extraction_timestamp": "2026-08-28T03:21:43.308174"
+    }
+  }
+}

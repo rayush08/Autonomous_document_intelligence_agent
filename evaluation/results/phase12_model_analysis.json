@@ -1,0 +1,7 @@
+{
+  "model_policy": "Auto-discovered Flash tier preference",
+  "preferred_models": [
+    "gemini-1.5-flash",
+    "gemini-2.0-flash"
+  ]
+}

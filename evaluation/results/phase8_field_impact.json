@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED_LIVE_CREDENTIAL_FAILURE",
+  "targeted_fields": [
+    "required_documents",
+    "target_beneficiaries",
+    "benefit_amount",
+    "stipend_or_funding",
+    "academic_criteria",
+    "domicile_criteria",
+    "scheme_type",
+    "benefit_type"
+  ],
+  "classification": "UNAVAILABLE_DUE_TO_CREDENTIAL_FAILURE"
+}

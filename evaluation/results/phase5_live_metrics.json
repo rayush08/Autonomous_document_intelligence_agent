@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-28T04:36:45Z",
+  "status": "BLOCKED_LIVE_CREDENTIAL_UNAVAILABLE",
+  "environment_propagation_audit": {
+    "env_file_discovered": true,
+    "env_file_path": ".env",
+    "centralized_config_loader": "src/llm/config.py",
+    "process_env_key_present": true,
+    "api_discovery_endpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+    "api_response_status": 400,
+    "api_response_reason": "API_KEY_INVALID",
+    "api_response_message": "API key not valid. Please pass a valid API key.",
+    "error_redaction_verified": true
+  },
+  "executable_test_suite": {
+    "compilation_status": "PASSED (0 syntax errors)",
+    "total_tests": 113,
+    "passed": 112,
+    "skipped": 1,
+    "failed": 0
+  },
+  "offline_evaluator_metrics": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.4011764705882353,
+    "verification_status_accuracy": 0.4011764705882353,
+    "missing_information_accuracy": 1.0,
+    "hallucination_rate": 0.0,
+    "evidence_grounding_accuracy": 1.0
+  },
+  "historical_phase3_live_baseline": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy_mean": 0.5429,
+    "verification_status_accuracy_mean": 0.8583,
+    "missing_information_accuracy_mean": 0.8148,
+    "hallucination_rate_mean": 0.1852,
+    "evidence_grounding_accuracy_mean": 1.0
+  }
+}

@@ -1,0 +1,4560 @@
+{
+  "overall": {
+    "total_documents_evaluated": 10,
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.5329,
+    "mean_field_value_score": 0.5477,
+    "verification_status_accuracy": 0.8503,
+    "missing_information_accuracy": 0.8148,
+    "hallucination_rate": 0.1852,
+    "evidence_grounding_accuracy": 1.0
+  },
+  "domain_breakdown": {
+    "government_schemes": {
+      "total_documents": 7,
+      "schema_validity_rate": 1.0,
+      "field_extraction_accuracy": 0.4286,
+      "verification_status_accuracy": 0.8235,
+      "missing_info_accuracy": 0.9091,
+      "hallucination_rate": 0.0909,
+      "average_latency_seconds": 6.806
+    },
+    "opportunities": {
+      "total_documents": 3,
+      "schema_validity_rate": 1.0,
+      "field_extraction_accuracy": 0.7917,
+      "verification_status_accuracy": 0.9167,
+      "missing_info_accuracy": 0.4,
+      "hallucination_rate": 0.6,
+      "average_latency_seconds": 4.702
+    }
+  },
+  "document_breakdown": [
+    {
+      "document_id": "GOV-E-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 6.027,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.2353,
+      "status_accuracy": 0.8824
+    },
+    {
+      "document_id": "GOV-E-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 7.205,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.2941,
+      "status_accuracy": 0.9412
+    },
+    {
+      "document_id": "GOV-E-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 13.635,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.4118,
+      "status_accuracy": 0.7647
+    },
+    {
+      "document_id": "GOV-E-04",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 4.052,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.4118,
+      "status_accuracy": 0.6471
+    },
+    {
+      "document_id": "GOV-M-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 4.091,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.4706,
+      "status_accuracy": 0.5882
+    },
+    {
+      "document_id": "GOV-M-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 6.27,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.5294,
+      "status_accuracy": 1.0
+    },
+    {
+      "document_id": "GOV-M-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "latency_seconds": 6.36,
+      "attempts": 1,
+      "field_count": 17,
+      "value_accuracy": 0.6471,
+      "status_accuracy": 0.9412
+    },
+    {
+      "document_id": "OPP-E-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "latency_seconds": 4.365,
+      "attempts": 1,
+      "field_count": 16,
+      "value_accuracy": 0.8125,
+      "status_accuracy": 0.9375
+    },
+    {
+      "document_id": "OPP-E-02",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "latency_seconds": 4.862,
+      "attempts": 1,
+      "field_count": 16,
+      "value_accuracy": 0.6875,
+      "status_accuracy": 0.875
+    },
+    {
+      "document_id": "OPP-M-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "latency_seconds": 4.878,
+      "attempts": 1,
+      "field_count": 16,
+      "value_accuracy": 0.875,
+      "status_accuracy": 0.9375
+    }
+  ],
+  "field_breakdown": {
+    "scheme_name": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.8571,
+      "mean_value_score": 0.8679
+    },
+    "scheme_type": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.1429,
+      "mean_value_score": 0.2143
+    },
+    "implementing_authority": {
+      "status_accuracy": 0.8571,
+      "value_accuracy": 0.5714,
+      "mean_value_score": 0.6
+    },
+    "target_beneficiaries": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.1429,
+      "mean_value_score": 0.1286
+    },
+    "education_level": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.5,
+      "mean_value_score": 0.47
+    },
+    "age_criteria": {
+      "status_accuracy": 0.8571,
+      "value_accuracy": 0.7143,
+      "mean_value_score": 0.7143
+    },
+    "income_criteria": {
+      "status_accuracy": 0.8571,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.5042
+    },
+    "academic_criteria": {
+      "status_accuracy": 0.7143,
+      "value_accuracy": 0.2857,
+      "mean_value_score": 0.2857
+    },
+    "category_criteria": {
+      "status_accuracy": 0.8571,
+      "value_accuracy": 0.4286,
+      "mean_value_score": 0.4107
+    },
+    "domicile_criteria": {
+      "status_accuracy": 0.7143,
+      "value_accuracy": 0.2857,
+      "mean_value_score": 0.2857
+    },
+    "benefit_type": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.2857,
+      "mean_value_score": 0.2571
+    },
+    "benefit_amount": {
+      "status_accuracy": 0.7143,
+      "value_accuracy": 0.1429,
+      "mean_value_score": 0.1286
+    },
+    "application_method": {
+      "status_accuracy": 0.8571,
+      "value_accuracy": 0.5714,
+      "mean_value_score": 0.5714
+    },
+    "application_url": {
+      "status_accuracy": 0.8,
+      "value_accuracy": 0.7,
+      "mean_value_score": 0.7
+    },
+    "required_documents": {
+      "status_accuracy": 0.5,
+      "value_accuracy": 0.3,
+      "mean_value_score": 0.3468
+    },
+    "application_deadline": {
+      "status_accuracy": 0.9,
+      "value_accuracy": 0.9,
+      "mean_value_score": 0.9
+    },
+    "scheme_status": {
+      "status_accuracy": 0.7143,
+      "value_accuracy": 0.7143,
+      "mean_value_score": 0.7143
+    },
+    "title": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 1.0
+    },
+    "organization": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 1.0
+    },
+    "opportunity_type": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 1.0
+    },
+    "eligible_disciplines": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.6667,
+      "mean_value_score": 0.8571
+    },
+    "skills_required": {
+      "status_accuracy": 0.6667,
+      "value_accuracy": 0.3333,
+      "mean_value_score": 0.3333
+    },
+    "experience_required": {
+      "status_accuracy": 0.3333,
+      "value_accuracy": 0.3333,
+      "mean_value_score": 0.303
+    },
+    "eligibility_notes": {
+      "status_accuracy": 0.6667,
+      "value_accuracy": 0.0,
+      "mean_value_score": 0.0
+    },
+    "location": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 1.0
+    },
+    "mode": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 1.0
+    },
+    "duration": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 0.9333
+    },
+    "stipend_or_funding": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 0.3333,
+      "mean_value_score": 0.7778
+    },
+    "start_date": {
+      "status_accuracy": 1.0,
+      "value_accuracy": 1.0,
+      "mean_value_score": 0.9667
+    }
+  },
+  "retry_statistics": {
+    "total_extraction_attempts": 10,
+    "semantic_retries_executed": 0,
+    "failures_after_retry": 0
+  },
+  "latency_statistics": {
+    "mean_latency_seconds": 6.175,
+    "median_latency_seconds": 5.452,
+    "slowest_document_id": "GOV-E-03",
+    "max_latency_seconds": 13.635
+  },
+  "raw_results": [
+    {
+      "document_id": "GOV-E-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 6.026596546173096,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "Post-Matric Scholarship for SC students",
+          "evidence": [
+            {
+              "text": "SCHEME NAME: Post-Matric Scholarship for SC students",
+              "locator": {
+                "section": "GOV-E-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Education & Learning",
+          "evidence": [
+            {
+              "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+              "locator": {
+                "section": "GOV-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry Of Social Justice and Empowerment",
+          "evidence": [
+            {
+              "text": "IMPLEMENTING AUTHORITY: Ministry Of Social Justice and Empowerment",
+              "locator": {
+                "section": "GOV-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "SC students",
+          "evidence": [
+            {
+              "text": "Post-Matric Scholarship for SC students",
+              "locator": {
+                "section": "GOV-E-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Post-matriculation or post-secondary level",
+          "evidence": [
+            {
+              "text": "at the post-matriculation or post-secondary level, enabling them to continue and complete their education.",
+              "locator": {
+                "section": "GOV-E-01-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": "The ceiling on age limit for admission as a regular student in different classes should be decided by the concerned institutions.",
+          "evidence": [
+            {
+              "text": "The ceiling on age limit for admission as a regular student in different classes should be decided by the concerned institutions.",
+              "locator": {
+                "section": "GOV-E-01-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "income_criteria": {
+          "value": "Parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+          "evidence": [
+            {
+              "text": "Scholarships will be paid to students whose parents' or guardians' income from all sources does not exceed ₹ 2,50,000/- per annum.",
+              "locator": {
+                "section": "GOV-E-01-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "academic_criteria": {
+          "value": "Passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education",
+          "evidence": [
+            {
+              "text": "Only candidates who belong to Scheduled Castes and have passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education are eligible.",
+              "locator": {
+                "section": "GOV-E-01-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "category_criteria": {
+          "value": [
+            "Scheduled Castes"
+          ],
+          "evidence": [
+            {
+              "text": "Only candidates who belong to Scheduled Castes and have passed the Matriculation, Higher Secondary, or a higher examination of a recognized university or Board of Secondary Education are eligible.",
+              "locator": {
+                "section": "GOV-E-01-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": "State/UT in which permanently settled or domiciled, as per the terms of domicile decided by the State",
+          "evidence": [
+            {
+              "text": "the State/UT in which permanently settled or domiciled, as per the terms of domicile decided by the State",
+              "locator": {
+                "section": "GOV-E-01-sec4"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_type": {
+          "value": "Financial assistance",
+          "evidence": [
+            {
+              "text": "providing financial assistance to students from economically weaker families at the post-matriculation or post-secondary level",
+              "locator": {
+                "section": "GOV-E-01-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": [
+            "Group-1 Degree and post Graduate Level professional courses: Hostellers ₹ 13,000/-, Day Scholars ₹ 7,000/-",
+            "Group-2: Other Professional Courses leading to Degree, Diploma, Certificate: Hostellers ₹ 9,500/-, Day Scholars ₹ 6,500/-",
+            "Group-3 Graduate and Post Graduate courses not covered under group 1 & group II: Hostellers ₹ 6,000/-, Day Scholars ₹ 3,000/-",
+            "Group-4: All post matriculation (Post Class X level non-degree courses: Hostellers ₹ 4,000/-, Day Scholars ₹ 2,500/-"
+          ],
+          "evidence": [
+            {
+              "text": "Group-1 Degree and post Graduate Level professional courses Hostellers (Yearly): ₹ 13,000/-, Day Scholars ( Yearly): ₹ 7,000/-",
+              "locator": {
+                "section": "GOV-E-01-sec6"
+              }
+            },
+            {
+              "text": "Group-2: Other Professional Courses leading to Degree, Diploma, Certificate Hostellers (Yearly): ₹ 9,500/-, Day Scholars ( Yearly): ₹ 6,500/-",
+              "locator": {
+                "section": "GOV-E-01-sec6"
+              }
+            },
+            {
+              "text": "Group-3 Graduate and Post Graduate courses not covered under group 1 & group II Hostellers (Yearly): ₹ 6,000/-, Day Scholars ( Yearly): ₹ 3,000/-",
+              "locator": {
+                "section": "GOV-E-01-sec6"
+              }
+            },
+            {
+              "text": "Group-4: All post matriculation (Post Class X level non-degree courses. Hostellers (Yearly): ₹ 4,000/-, Day Scholars ( Yearly): ₹ 2,500/-",
+              "locator": {
+                "section": "GOV-E-01-sec6"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "1. Applicant must register them self on NSP portal. 2. Login with their credentials and apply.",
+          "evidence": [
+            {
+              "text": "1. Applicant must register them self on NSP portal.\n2. Login with their credentials and apply.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://scholarships.gov.in/",
+          "evidence": [
+            {
+              "text": "URL :https://scholarships.gov.in/",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Photograph",
+            "Academic Certificate",
+            "Caste Certificate",
+            "Income proof",
+            "Domicile Certificate",
+            "Bank Account Details",
+            "Aadhaar Card"
+          ],
+          "evidence": [
+            {
+              "text": "Photograph.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            },
+            {
+              "text": "Academic Certificate.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            },
+            {
+              "text": "Caste Certificate.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            },
+            {
+              "text": "Income proof.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            },
+            {
+              "text": "Domicile Certificate.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            },
+            {
+              "text": "Bank Account Details.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            },
+            {
+              "text": "Aadhaar Card.",
+              "locator": {
+                "section": "GOV-E-01-sec8"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "document_metadata": {
+          "document_id": "GOV-E-01",
+          "source_type": "HTML",
+          "source_identifier": "https://myscheme.gov.in/schemes/pm-pms-sc",
+          "extraction_timestamp": "2026-08-28T03:49:58.646242"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": true,
+          "missing_info_correct": false,
+          "is_hallucination": true,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 0.5294117647058824,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 0.2857142857142857,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-E-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 7.2047529220581055,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "CSIR Junior Research Fellowship (JRF through CSIR-UGC NET)",
+          "evidence": [
+            {
+              "text": "REVISED Junior Research Fellowships (JRF through CSIR-UGC NET) guidelines w.e.f. from 1st March 2023",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Fellowship",
+          "evidence": [
+            {
+              "text": "The EMR Division under HRD Group of Council of Scientific & Industrial Research (CSIR) provide CSIR Research Fellowships and Associateships",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Council of Scientific & Industrial Research (CSIR)",
+          "evidence": [
+            {
+              "text": "Council of Scientific & Industrial Research (CSIR)",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Bright young men and women for training in methods of research under the expert guidance of faculty members/scientists",
+          "evidence": [
+            {
+              "text": "provide CSIR Research Fellowships and Associateships to bright young men and women for training in methods of research under the expert guidance of faculty members/scientists working in University Departments/Institutes of National Importance/National Laboratories and Institutes of CSIR",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Master's Degree / 4-year Bachelor's Degree",
+          "evidence": [
+            {
+              "text": "Master’s Degree or equivalent examination from recognized universities/ institutions... The candidates having passed a 4-year/8-semester bachelor’s degree programme",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": "Not more than 30 years as on the 1st day of the month in which the examination is concluded (with relaxations up to 5 years for OBC-NCL/SC/ST/PwD/Third gender categories, women applicants, research experience, and armed forces service)",
+          "evidence": [
+            {
+              "text": "Not more than 30 years as on the 1st day of the month in which the examination is concluded. A relaxation of upto 5 years is provided to the candidates belonging to OBC-NCL / SC/ ST/ PwD/ Third gender categories and to women applicants.",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": "At least 55% marks for General/General-EWS in Master's Degree; at least 50% marks for OBC-NCL/SC/ST/PwD/Third gender in Master's Degree; minimum 75% marks in aggregate or its equivalent grade for 4-year bachelor's degree (5% relaxation for SC/ST/OBC/Differently-Abled/EWS)",
+          "evidence": [
+            {
+              "text": "General/ Unreserved/ General-EWS candidates who have secured at least 55% marks (without rounding off) in Master’s Degree or equivalent examination... The Other Backward Classes (OBC) belonging to Non-Creamy Layer/Scheduled Caste (SC)/ Scheduled Tribe (ST)/ Persons with Disability (PwD)/ Third gender category candidates who have secured at least 50% marks... The candidates having passed a 4-year/8-semester bachelor’s degree programme should have a minimum of 75% marks in aggregate or its equivalent grade",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "category_criteria": {
+          "value": [
+            "General",
+            "General-EWS",
+            "OBC-NCL",
+            "SC",
+            "ST",
+            "PwD",
+            "Third gender",
+            "Differently-Abled"
+          ],
+          "evidence": [
+            {
+              "text": "General/ Unreserved/ General-EWS... Other Backward Classes (OBC) belonging to Non-Creamy Layer/Scheduled Caste (SC)/ Scheduled Tribe (ST)/ Persons with Disability (PwD)/ Third gender category... Differently-Abled, Economically Weaker Section (EWS)",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": "Only bonafide Indian citizens, residing in India are eligible",
+          "evidence": [
+            {
+              "text": "Only bonafide Indian citizens, residing in India are eligible for the award of research Fellowship/Associateships.",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_type": {
+          "value": "Stipend and Contingent Grant",
+          "evidence": [
+            {
+              "text": "The stipend of a JRF selected through CSIR-UGC National Eligibility Test (NET) will be Rs 37,000/ p.m for the first two years. In addition, annual contingent grant of Rs. 20,000/- per fellow will also be provided",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": [
+            "Rs 37,000/- p.m. for the first two years",
+            "Rs 42,000/- p.m. for the 3rd and subsequent years (upon SRF upgradation)",
+            "Rs 20,000/- per year annual contingent grant"
+          ],
+          "evidence": [
+            {
+              "text": "The stipend of a JRF selected through CSIR-UGC National Eligibility Test (NET) will be Rs 37,000/ p.m for the first two years. In addition, annual contingent grant of Rs. 20,000/- per fellow will also be provided to the fellow... upgraded to the position of SRF on the monthly stipend of Rs. 42,000/- for the 3rd and subsequent years.",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "Online",
+          "evidence": [
+            {
+              "text": "On-line applications for Joint CSIR UGC NET Examination are invited normally twice a year on all India basis.",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://csirnet.nta.ac.in",
+          "evidence": [
+            {
+              "text": "The information with respect to inviting applications is notified on https://csirnet.nta.ac.in.",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": "Active",
+          "evidence": [
+            {
+              "text": "REVISED Junior Research Fellowships (JRF through CSIR-UGC NET) guidelines w.e.f. from 1st March 2023",
+              "locator": {
+                "section": "GOV-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "GOV-E-02",
+          "source_type": "HTML",
+          "source_identifier": "https://csirhrdg.res.in/Home/Index/1/Default/3384/60",
+          "extraction_timestamp": "2026-08-28T03:50:05.829907"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 0.625,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 0.5,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 0.125,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-E-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 13.634839057922363,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "Pragati Scholarship Scheme For Girl Students (Technical Degree)",
+          "evidence": [
+            {
+              "text": "SCHEME NAME: Pragati Scholarship Scheme For Girl Students (Technical Degree)",
+              "locator": {
+                "section": "GOV-E-03-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Education & Learning",
+          "evidence": [
+            {
+              "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+              "locator": {
+                "section": "GOV-E-03-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry of Education",
+          "evidence": [
+            {
+              "text": "IMPLEMENTING AUTHORITY: Ministry of Education",
+              "locator": {
+                "section": "GOV-E-03-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Girl Students",
+          "evidence": [
+            {
+              "text": "Girl Student.",
+              "locator": {
+                "section": "GOV-E-03-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Technical Degree Course (1st or 2nd Year through lateral entry) in an AICTE approved institution",
+          "evidence": [
+            {
+              "text": "admitted in 1st or 2nd Year of the technical degree course in an AICTE approved institution.",
+              "locator": {
+                "section": "GOV-E-03-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": "The annual income of the family (from all sources) must not be more than ₹ 8,00,000/- per annum during the current financial year.",
+          "evidence": [
+            {
+              "text": "The annual income of the family (from all sources) must not be more than ₹ 8,00,000/- per annum during the current financial year.",
+              "locator": {
+                "section": "GOV-E-03-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": "Applicable to eligible girls from 13 Union Territories and North Eastern States i.e. Andaman and Nicobar Islands (UT), Jammu and Kashmir (UT), Ladakh (UT), Dadra and Nagar Haveli & Daman and Diu (UT), Lakshadweep (UT), Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim & Tripura.",
+          "evidence": [
+            {
+              "text": "from the following 13 Union Territories and North Eastern States i.e. Andaman and Nicobar Islands (UT), Jammu and Kashmir (UT), Ladakh (UT), Dadra and Nagar Haveli & Daman and Diu (UT), Lakshadweep (UT), Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim & Tripura",
+              "locator": {
+                "section": "GOV-E-03-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_type": {
+          "value": "Scholarship as a lump sum amount towards payment of college fees, purchase of computer, stationeries, books, equipment, software, etc.",
+          "evidence": [
+            {
+              "text": "as a lump sum amount towards payment of college fees, purchase of computer, stationeries, books, equipment, software, etc.",
+              "locator": {
+                "section": "GOV-E-03-sec6"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": "₹ 50,000/- per annum",
+          "evidence": [
+            {
+              "text": "₹ 50,000/- per annum",
+              "locator": {
+                "section": "BENEFITS AND FINANCIAL ASSISTANCE"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "Online via National Scholarship Portal",
+          "evidence": [
+            {
+              "text": "No. You need to visit https://scholarships.gov.in/ to apply.",
+              "locator": {
+                "section": "GOV-E-03-sec8"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://scholarships.gov.in/",
+          "evidence": [
+            {
+              "text": "No. You need to visit https://scholarships.gov.in/ to apply.",
+              "locator": {
+                "section": "GOV-E-03-sec8"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": "Active",
+          "evidence": [
+            {
+              "text": "A scholarship scheme by MoE for Girl Students admitted in 1st or 2nd Year of the technical degree course in an AICTE approved institution.",
+              "locator": {
+                "section": "GOV-E-03-sec3"
+              }
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "uncertain"
+        },
+        "document_metadata": {
+          "document_id": "GOV-E-03",
+          "source_type": "HTML",
+          "source_identifier": "https://www.myscheme.gov.in/schemes/pssgtd",
+          "extraction_timestamp": "2026-08-28T03:50:18.148280"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 0.5,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": false,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "uncertain"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-E-04",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 4.0523810386657715,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY)",
+          "evidence": [
+            {
+              "text": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY) is a flagship scheme of the Ministry of Social Justice & Empowerment dedicated to the socio-economic empowerment of Scheduled Castes.",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Central Sector Scheme / Flagship Scheme",
+          "evidence": [
+            {
+              "text": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY) is a flagship scheme of the Ministry of Social Justice & Empowerment dedicated to the socio-economic empowerment of Scheduled Castes.",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry of Social Justice and Empowerment, Government of India",
+          "evidence": [
+            {
+              "text": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojana (PM-AJAY) is a scheme of the Government of India, implemented by the Ministry of Social Justice and Empowerment",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Scheduled Castes",
+          "evidence": [
+            {
+              "text": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY) is a flagship scheme of the Ministry of Social Justice & Empowerment dedicated to the socio-economic empowerment of Scheduled Castes.",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": [
+            "Scheduled Castes"
+          ],
+          "evidence": [
+            {
+              "text": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojna (PM-AJAY) is a flagship scheme of the Ministry of Social Justice & Empowerment dedicated to the socio-economic empowerment of Scheduled Castes.",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": "Livelihood opportunities, village infrastructure improvement, education and residential facilities access, construction and repair of hostels, grants-in-aid for economic betterment",
+          "evidence": [
+            {
+              "text": "The scheme promotes livelihood opportunities, strengthens village infrastructure, and enhances access to education and residential facilities for sustainable and inclusive development.",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_method": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": "Active",
+          "evidence": [
+            {
+              "text": "Submission of Annual Plan under GIA component of PM-AJAY for 2026–27 – reg.",
+              "locator": {
+                "section": "GOV-E-04-sec1"
+              }
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "GOV-E-04",
+          "source_type": "HTML",
+          "source_identifier": "https://www.dosje.gov.in/organisation/pradhan-mantri-anusuchit-jaati-abhyuday-yojnapm-ajay/",
+          "extraction_timestamp": "2026-08-28T03:50:23.560626"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 0.75,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-M-01",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 4.0911383628845215,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "National Fellowship Scheme [NFS] / National Fellowship for Higher Education of ST Students (NFST)",
+          "evidence": [
+            {
+              "text": "NATIONAL TRIBAL FELLOWSHIP PORTAL",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            },
+            {
+              "text": "About The National Fellowship Scheme [NFS] and Portal",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Central Sector Scheme",
+          "evidence": [
+            {
+              "text": "This is a Central Sector Scheme of Ministry of Tribal Affairs",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "target_beneficiaries": {
+          "value": "ST students",
+          "evidence": [
+            {
+              "text": "every year 750 fresh ST students are given fellowship for pursuing M.Phil. (only in Psychiatric Social Work/ M.Phil. in Clinical Psychology), Integrated M.Phil.+ Ph.D. and Ph. D. Courses.",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "M.Phil. (only in Psychiatric Social Work/ M.Phil. in Clinical Psychology), Integrated M.Phil.+ Ph.D. and Ph.D. Courses",
+          "evidence": [
+            {
+              "text": "pursuing M.Phil. (only in Psychiatric Social Work/ M.Phil. in Clinical Psychology), Integrated M.Phil.+ Ph.D. and Ph. D. Courses.",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": [
+            "Scheduled Tribes (ST)"
+          ],
+          "evidence": [
+            {
+              "text": "Scheduled Tribes (STs)",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": "Fellowship",
+          "evidence": [
+            {
+              "text": "every year 750 fresh ST students are given fellowship",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_method": {
+          "value": "Online",
+          "evidence": [
+            {
+              "text": "The applications are invited online on National Fellowship Portal.",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": "31/12/2025",
+          "evidence": [
+            {
+              "text": "The last date for application verification at the University/ Institute level has been extended till 31/12/2025 up to 5:00 PM.",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_status": {
+          "value": "Active",
+          "evidence": [
+            {
+              "text": "Notice Regarding Selection of Merit List - 2025-26",
+              "locator": {
+                "section": "GOV-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "GOV-M-01",
+          "source_type": "HTML",
+          "source_identifier": "https://fellowship.tribal.gov.in/",
+          "extraction_timestamp": "2026-08-28T03:50:27.655537"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.6,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": true,
+          "missing_info_correct": false,
+          "is_hallucination": true,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-M-02",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 6.270426511764526,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "PM-YASASVI: Top Class College Education for OBC, EBC and DNT Students",
+          "evidence": [
+            {
+              "text": "SCHEME NAME: PM-YASASVI: Top Class College Education for OBC, EBC and DNT Students",
+              "locator": {
+                "section": "GOV-M-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Education & Learning",
+          "evidence": [
+            {
+              "text": "SCHEME CATEGORY / TYPE: Education & Learning",
+              "locator": {
+                "section": "GOV-M-02-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Ministry Of Social Justice and Empowerment",
+          "evidence": [
+            {
+              "text": "IMPLEMENTING AUTHORITY: Ministry Of Social Justice and Empowerment",
+              "locator": {
+                "section": "GOV-M-02-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Students belonging to OBC, EBC and DNT categories",
+          "evidence": [
+            {
+              "text": "The objective of the scheme is to recognize and promote quality education amongst Students belonging to OBC, EBC and DNT categories by providing full financial support.",
+              "locator": {
+                "section": "GOV-M-02-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Beyond Class XII",
+          "evidence": [
+            {
+              "text": "The Scheme will cover OBC/EBC/DNT students for pursuing studies beyond Class XII.",
+              "locator": {
+                "section": "GOV-M-02-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": "Up to ₹2.50 lakhs annual family income",
+          "evidence": [
+            {
+              "text": "Those OBC/EBC/DNT students having total annual family income from all sources up to ₹2.50 lakhs and have secured admission in a full-time prescribed course in any of the notified institutions according to the general selection criteria prescribed by the concerned institution, will be eligible for a scholarship under the Scheme",
+              "locator": {
+                "section": "GOV-M-02-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "academic_criteria": {
+          "value": "Secured admission in a full-time prescribed course in any of the notified institutions according to the general selection criteria prescribed by the concerned institution",
+          "evidence": [
+            {
+              "text": "secured admission in a full-time prescribed course in any of the notified institutions according to the general selection criteria prescribed by the concerned institution",
+              "locator": {
+                "section": "GOV-M-02-sec5"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "category_criteria": {
+          "value": [
+            "OBC",
+            "EBC",
+            "DNT"
+          ],
+          "evidence": [
+            {
+              "text": "Students belonging to OBC, EBC and DNT categories",
+              "locator": {
+                "section": "GOV-M-02-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": "Full financial support including tuition fee, living expenses, books & stationery, and computer/laptop assistance",
+          "evidence": [
+            {
+              "text": "The objective of the scheme is to recognize and promote quality education amongst Students belonging to OBC, EBC and DNT categories by providing full financial support.",
+              "locator": {
+                "section": "GOV-M-02-sec3"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": [
+            "Full tuition fee and non-refundable charges (ceiling of ₹2.00 lakhs per annum per student for private sector institutions and ₹3.72 lakhs per annum per student for private sector flying clubs)",
+            "Living expenses @ ₹3,000/- per month per student",
+            "Books and stationery @ ₹5,000/- per annum per student",
+            "Computer/laptop with accessories limited to ₹45,000/- per student as one-time assistance"
+          ],
+          "evidence": [
+            {
+              "text": "Full tuition fee and non-refundable charges (there will be a ceiling of ₹2.00 lakhs per annum per student for private sector institutions and ₹3.72 lakhs per annum per student for the private sector flying clubs for Commercial Pilot Training and Type Rating Courses)\nLiving expenses to the beneficiary @₹3,000/-per month per student\nBooks and stationery @ ₹5,000/- per annum per student\nA latest computer/laptop of a reputed brand with accessories like UPS and printer limited to ₹45,000/- per student as one-time assistance during the course.",
+              "locator": {
+                "section": "GOV-M-02-sec6"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "National Scholarship Portal (NSP)",
+          "evidence": [
+            {
+              "text": "The students will submit their application on National Scholarship Portal (NSP). https://scholarships.gov.in/",
+              "locator": {
+                "section": "GOV-M-02"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://scholarships.gov.in/",
+          "evidence": [
+            {
+              "text": "https://scholarships.gov.in/",
+              "locator": {
+                "section": "GOV-M-02"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Aadhaar Card",
+            "Passport size photograph",
+            "Educational qualification marksheets/certificates",
+            "Valid Income certificate issued by the competent Authority",
+            "Domicile Certificate",
+            "Caste/Community Certificate issued by the competent authority",
+            "Disability certificate, if applicable",
+            "Bank Account details",
+            "Admission Rank Proof",
+            "Proof of fee details to claim the scholarship",
+            "Any other documents as required"
+          ],
+          "evidence": [
+            {
+              "text": "1. Aadhaar Card\n2. Passport size photograph\n3. Educational qualification marksheets/certificates\n4. Valid Income certificate issued by the competent Authority\n5. Domicile Certificate\n6. Caste/Community Certificate issued by the competent authority\n7. Disability certificate, if applicable\n8. Bank Account details\n9. Admission Rank Proof \n10. Proof of fee details to claim the scholarship\n11. Any other documents as required",
+              "locator": {
+                "section": "GOV-M-02-sec7"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "scheme_status": {
+          "value": "active",
+          "evidence": [
+            {
+              "text": "The Scheme will operate in all the institutions notified by the Ministry of Social Justice and Empowerment for every financial year 2021-22 onwards.",
+              "locator": {
+                "section": "GOV-M-02-sec4"
+              }
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "GOV-M-02",
+          "source_type": "HTML",
+          "source_identifier": "https://www.myscheme.gov.in/schemes/pmy-tcc",
+          "extraction_timestamp": "2026-08-28T03:50:33.926892"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 0.75,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 0.18181818181818182,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "GOV-M-03",
+      "domain": "government_schemes",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 6.360382795333862,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "scheme_name": {
+          "value": "Biomass Programme",
+          "evidence": [
+            {
+              "text": "Subject: Administrative approval for implementation of Biomass Programme under the Umbrella scheme of National Bioenergy Programme for duration of FY 2021-22 to 2025-26 (Phase-I)- Reg.",
+              "locator": {
+                "section": "GOV-M-03-p1-c1",
+                "page": 1
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_type": {
+          "value": "Subsidy / Financial Assistance",
+          "evidence": [
+            {
+              "text": "The programme provides Central Financial Assistance (CFA) to project developers and service charges to implementing agency and inspection agencies in respect of setting up of Briquette / Pellet manufacturing plants and Biomass (non-bagasse) cogeneration projects in industries.",
+              "locator": {
+                "section": "GOV-M-03-p5-c1",
+                "page": 5
+              }
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "verified"
+        },
+        "implementing_authority": {
+          "value": "Indian Renewable Energy Development Agency Limited (IREDA)",
+          "evidence": [
+            {
+              "text": "Indian Renewable Energy Development Agency Limited (IREDA) shall be the implementing agency for implementation of the Biomass programm e.",
+              "locator": {
+                "section": "GOV-M-03-p2-c1",
+                "page": 2
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "target_beneficiaries": {
+          "value": "Companies registered under the Companies Act, Partnership Firms, Proprietorship Firms, Cooperatives, Public Sector Companies, Government owned Firms",
+          "evidence": [
+            {
+              "text": "Companies registered under the Companies Act, Partnership Firms, Proprietorship Firms, Cooperatives, Public Sector Companies, Government owned Firms are eligible for financial support under the scheme.",
+              "locator": {
+                "section": "GOV-M-03-p6-c1",
+                "page": 6
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "age_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "income_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "academic_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "category_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "domicile_criteria": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "benefit_type": {
+          "value": "Central Financial Assistance (CFA)",
+          "evidence": [
+            {
+              "text": "The programme provides Central Financial Assistance (CFA) to project developers and service charges to implement ing agency and inspection agencies in respect of setting up of Briquette / Pellet manufacturing plants and Biomass (non- bagasse) cogeneration projects in industries.",
+              "locator": {
+                "section": "GOV-M-03-p5-c1",
+                "page": 5
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "benefit_amount": {
+          "value": [
+            "Rs. 9 Lakh per MTPH manufacturing capacity (maximum CFA of Rs 45 Lakhs per plant) for Briquette / Pellet Manufacturing plants",
+            "Rs. 40 Lakhs/MW (on Installed Capacity) (maximum CFA of Rs. 5 Crores per project) for Biomass (Non-bagasse) cogeneration projects"
+          ],
+          "evidence": [
+            {
+              "text": "1 Briquette / Pellet Manufacturing plants Rs. 9 Lakh per MTPH ( metric t on/hour) manufacturing capacity (maximum CFA of Rs 45 Lakhs per plant)\n2 Biomass (Non-bagasse ) cogeneration projects Rs. 40 Lakhs/MW (on Installed Capacity) (maximum CFA of Rs. 5 Crores per project)",
+              "locator": {
+                "section": "GOV-M-03-p5-c1",
+                "page": 1
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_method": {
+          "value": "Online through BioURJA Portal",
+          "evidence": [
+            {
+              "text": "The proposal for availing CFA should be submitted through BioURJA Portal (www.biourja.mnre.gov.in) before commissioning of the plant",
+              "locator": {
+                "section": "GOV-M-03-p7-c1",
+                "page": 5
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "www.biourja.mnre.gov.in",
+          "evidence": [
+            {
+              "text": "The proposal for availing CFA should be submitted through BioURJA Portal (www.biourja.mnre.gov.in) before commissioning of the plant",
+              "locator": {
+                "section": "GOV-M-03-p7-c1",
+                "page": 5
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": "31.12.2025",
+          "evidence": [
+            {
+              "text": "The last date for submitting the applications under these guidelines shall be 31.12.2025.",
+              "locator": {
+                "section": "GOV-M-03-p7-c1",
+                "page": 7
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "scheme_status": {
+          "value": "active",
+          "evidence": [
+            {
+              "text": "implementation of the National Bioenergy Programm e for a period of 01.04.2021 to 31.03.2026 with the outlay of Rs.858 crore under Phase-I.",
+              "locator": {
+                "section": "GOV-M-03-p1-c1",
+                "page": 1
+              }
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "GOV-M-03",
+          "source_type": "PDF",
+          "source_identifier": "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2023/10/20231005812894382.pdf",
+          "extraction_timestamp": "2026-08-28T03:50:40.294765"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "scheme_name",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_type",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "implementing_authority",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "target_beneficiaries",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "age_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "income_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "academic_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "category_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "domicile_criteria",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "benefit_type",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "benefit_amount",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_method",
+          "status_match": true,
+          "value_score": 0.8,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "scheme_status",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "OPP-E-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 4.365308046340942,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "title": {
+          "value": "MIT Summer Research Program (MSRP)",
+          "evidence": [
+            {
+              "text": "OPPORTUNITY TITLE: MIT Summer Research Program (MSRP)",
+              "locator": {
+                "section": "OPP-E-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "organization": {
+          "value": "Massachusetts Institute of Technology (MIT)",
+          "evidence": [
+            {
+              "text": "ORGANIZATION: Massachusetts Institute of Technology (MIT)",
+              "locator": {
+                "section": "OPP-E-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "opportunity_type": {
+          "value": "Summer Research Internship / Fellowship",
+          "evidence": [
+            {
+              "text": "OPPORTUNITY TYPE: Summer Research Internship / Fellowship",
+              "locator": {
+                "section": "OPP-E-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Undergraduate",
+          "evidence": [
+            {
+              "text": "- Applicants must be enrolled full-time in an undergraduate degree program at an accredited college or university.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "eligible_disciplines": {
+          "value": [
+            "Computer Science",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Materials Science",
+            "Brain Cognitive Sciences"
+          ],
+          "evidence": [
+            {
+              "text": "- Eligible Disciplines: Computer Science, Electrical Engineering, Mechanical Engineering, Physics, Chemistry, Biology, Materials Science, and Brain Cognitive Sciences.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "skills_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "experience_required": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "eligibility_notes": {
+          "value": "Applicants must be enrolled full-time in an undergraduate degree program at an accredited college or university with a minimum GPA of 3.5 on a 4.0 scale. Target groups include African American, Hispanic/Latino, Native American, first-generation college students, and socioeconomically disadvantaged students.",
+          "evidence": [
+            {
+              "text": "- Applicants must be enrolled full-time in an undergraduate degree program at an accredited college or university.\n- Eligible Disciplines: Computer Science, Electrical Engineering, Mechanical Engineering, Physics, Chemistry, Biology, Materials Science, and Brain Cognitive Sciences.\n- Academic Standing: Minimum GPA of 3.5 on a 4.0 scale.\n- Target Groups: African American, Hispanic/Latino, Native American, first-generation college students, and socioeconomically disadvantaged students.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "location": {
+          "value": "MIT Campus, Cambridge, Massachusetts, USA",
+          "evidence": [
+            {
+              "text": "- Location: MIT Campus, Cambridge, Massachusetts, USA.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "mode": {
+          "value": "On-campus / In-person",
+          "evidence": [
+            {
+              "text": "- Mode: On-campus / In-person.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "duration": {
+          "value": "9 weeks",
+          "evidence": [
+            {
+              "text": "- Duration: 9 weeks (June 5, 2026 to August 5, 2026).",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "stipend_or_funding": {
+          "value": [
+            "Weekly stipend of $600 per week ($5,400 for the full 9-week program)",
+            "Round-trip travel expenses to and from Cambridge, MA",
+            "Full university housing and campus meal allowance provided"
+          ],
+          "evidence": [
+            {
+              "text": "- Weekly stipend of $600 per week ($5,400 for the full 9-week program).\n- Round-trip travel expenses to and from Cambridge, MA.\n- Full university housing and campus meal allowance provided.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "start_date": {
+          "value": "June 5, 2026",
+          "evidence": [
+            {
+              "text": "- Duration: 9 weeks (June 5, 2026 to August 5, 2026).",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": "February 1, 2026 at 11:59 PM EST",
+          "evidence": [
+            {
+              "text": "- Application Deadline: February 1, 2026 at 11:59 PM EST.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://mit.edu/msrp/apply",
+          "evidence": [
+            {
+              "text": "- Official Application Portal URL: https://mit.edu/msrp/apply",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Official Academic Transcript",
+            "Resume/CV",
+            "Statement of Purpose (2 pages)",
+            "2 Letters of Recommendation"
+          ],
+          "evidence": [
+            {
+              "text": "- Required Documents: Official Academic Transcript, Resume/CV, Statement of Purpose (2 pages), and 2 Letters of Recommendation.",
+              "locator": {
+                "section": "OPP-E-01-sec2"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "OPP-E-01",
+          "source_type": "HTML",
+          "source_identifier": "https://mit.edu/msrp",
+          "extraction_timestamp": "2026-08-28T03:50:44.666970"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "title",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "organization",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "opportunity_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "eligible_disciplines",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "skills_required",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "experience_required",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "eligibility_notes",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "location",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "mode",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "duration",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "stipend_or_funding",
+          "status_match": true,
+          "value_score": 0.6666666666666666,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "start_date",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "OPP-E-02",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 4.861691474914551,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "title": {
+          "value": "CERN Summer Student Programme 2026",
+          "evidence": [
+            {
+              "text": "OPPORTUNITY TITLE: CERN Summer Student Programme 2026",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "organization": {
+          "value": "European Organization for Nuclear Research (CERN)",
+          "evidence": [
+            {
+              "text": "ORGANIZATION: European Organization for Nuclear Research (CERN)",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "opportunity_type": {
+          "value": "International Student Internship & Training Program",
+          "evidence": [
+            {
+              "text": "OPPORTUNITY TYPE: International Student Internship & Training Program",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "Bachelor or Master student",
+          "evidence": [
+            {
+              "text": "- You are a Bachelor or Master student (having completed at least 3 years of full-time studies at university level).",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "eligible_disciplines": {
+          "value": [
+            "Physics",
+            "Engineering (Electrical, Electronic, Mechanical)",
+            "Computer Science",
+            "Data Science",
+            "Applied Mathematics"
+          ],
+          "evidence": [
+            {
+              "text": "- Eligible Disciplines: Physics, Engineering (Electrical, Electronic, Mechanical), Computer Science, Data Science, and Applied Mathematics.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "skills_required": {
+          "value": [
+            "Proficient in English or French"
+          ],
+          "evidence": [
+            {
+              "text": "- Language Skills: Proficient in English or French.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "experience_required": {
+          "value": "No prior research experience required.",
+          "evidence": [
+            {
+              "text": "- Prior Experience: No prior research experience required.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "eligibility_notes": {
+          "value": "Must have completed at least 3 years of full-time studies at university level.",
+          "evidence": [
+            {
+              "text": "- You are a Bachelor or Master student (having completed at least 3 years of full-time studies at university level).",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "location": {
+          "value": "CERN Campus, Geneva, Switzerland",
+          "evidence": [
+            {
+              "text": "- Location: CERN Campus, Geneva, Switzerland.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "mode": {
+          "value": "On-site / In-person",
+          "evidence": [
+            {
+              "text": "- Mode: On-site / In-person.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "duration": {
+          "value": "8 to 13 weeks",
+          "evidence": [
+            {
+              "text": "- Program Duration: 8 to 13 weeks during July to September.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "stipend_or_funding": {
+          "value": [
+            "Subsistence allowance of 90 CHF per calendar day (approx. 2,700 CHF per month) net of tax",
+            "Travel allowance for round-trip travel from home institution to Geneva",
+            "Health insurance coverage included for all participants"
+          ],
+          "evidence": [
+            {
+              "text": "- Subsistence allowance of 90 CHF per calendar day (approx. 2,700 CHF per month) net of tax.\n- Travel allowance for round-trip travel from home institution to Geneva.\n- Health insurance coverage included for all participants.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "start_date": {
+          "value": "July",
+          "evidence": [
+            {
+              "text": "- Program Duration: 8 to 13 weeks during July to September.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "verified"
+        },
+        "application_deadline": {
+          "value": "January 31, 2026",
+          "evidence": [
+            {
+              "text": "- Application Deadline: January 31, 2026.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://careers.cern/summer",
+          "evidence": [
+            {
+              "text": "- Application URL: https://careers.cern/summer",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Detailed Curriculum Vitae (CV)",
+            "Most recent official Academic Transcript",
+            "Two letters of recommendation from university professors"
+          ],
+          "evidence": [
+            {
+              "text": "- Detailed Curriculum Vitae (CV).\n- Most recent official Academic Transcript.\n- Two letters of recommendation from university professors.",
+              "locator": {
+                "section": "OPP-E-02-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "OPP-E-02",
+          "source_type": "HTML",
+          "source_identifier": "https://careers.cern/summer",
+          "extraction_timestamp": "2026-08-28T03:50:49.535122"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "title",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "organization",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "opportunity_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "eligible_disciplines",
+          "status_match": true,
+          "value_score": 0.5714285714285714,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "skills_required",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "experience_required",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": true,
+          "missing_info_correct": false,
+          "is_hallucination": true,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "eligibility_notes",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": true,
+          "missing_info_correct": false,
+          "is_hallucination": true,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "location",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "mode",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "duration",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "stipend_or_funding",
+          "status_match": true,
+          "value_score": 0.6666666666666666,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "start_date",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    },
+    {
+      "document_id": "OPP-M-01",
+      "domain": "opportunities",
+      "schema_valid": true,
+      "schema_errors": [],
+      "is_infrastructure_failure": false,
+      "infrastructure_error": "",
+      "latency_seconds": 4.8780059814453125,
+      "extraction_attempts": 1,
+      "extracted_record": {
+        "title": {
+          "value": "Marie Skłodowska-Curie Postdoctoral Fellowships (MSCA-PF) 2026",
+          "evidence": [
+            {
+              "text": "OPPORTUNITY TITLE: Marie Skłodowska-Curie Postdoctoral Fellowships (MSCA-PF) 2026",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "organization": {
+          "value": "European Commission / Horizon Europe",
+          "evidence": [
+            {
+              "text": "ORGANIZATION: European Commission / Horizon Europe",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "opportunity_type": {
+          "value": "Postdoctoral Research Fellowship",
+          "evidence": [
+            {
+              "text": "OPPORTUNITY TYPE: Postdoctoral Research Fellowship",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "education_level": {
+          "value": "PhD",
+          "evidence": [
+            {
+              "text": "Academic Level: Researchers must hold a doctoral degree (PhD) at the call deadline.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "eligible_disciplines": {
+          "value": [
+            "Life Sciences",
+            "Chemistry",
+            "Physics",
+            "Mathematics",
+            "Information Sciences",
+            "Environment",
+            "Social Sciences and Humanities"
+          ],
+          "evidence": [
+            {
+              "text": "Eligible Disciplines: All scientific disciplines are eligible (Life Sciences, Chemistry, Physics, Mathematics, Information Sciences, Environment, Social Sciences and Humanities).",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "skills_required": {
+          "value": "advanced training, international, interdisciplinary and inter-sectoral mobility",
+          "evidence": [
+            {
+              "text": "wish to acquire new skills through advanced training, international, interdisciplinary and inter-sectoral mobility.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "verified"
+        },
+        "experience_required": {
+          "value": "Maximum 8 years of full-time equivalent research experience after PhD conferral.",
+          "evidence": [
+            {
+              "text": "Experience Required: Maximum 8 years of full-time equivalent research experience after PhD conferral.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "eligibility_notes": {
+          "value": "Applicants must not have resided or carried out their main activity in the country of the host organization for more than 12 months in the 36 months prior to call deadline.",
+          "evidence": [
+            {
+              "text": "Mobility Rule: Applicants must not have resided or carried out their main activity in the country of the host organization for more than 12 months in the 36 months prior to call deadline.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "location": {
+          "value": "European Union Member States, Associated Countries, or Global Host Institutions",
+          "evidence": [
+            {
+              "text": "Location: European Union Member States, Associated Countries, or Global Host Institutions.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "mode": {
+          "value": "Full-time in-person research appointment",
+          "evidence": [
+            {
+              "text": "Mode: Full-time in-person research appointment.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "duration": {
+          "value": "12 to 24 months (European Fellowships) or 24 to 36 months (Global Fellowships)",
+          "evidence": [
+            {
+              "text": "Duration: 12 to 24 months (European Fellowships) or 24 to 36 months (Global Fellowships).",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "stipend_or_funding": {
+          "value": [
+            "Living Allowance: €5,080 per month (adjusted by country correction coefficient)",
+            "Mobility Allowance: €600 per month for all fellows",
+            "Family Allowance: €660 per month (if applicable)",
+            "Research, Training and Networking Costs: €1,000 per month"
+          ],
+          "evidence": [
+            {
+              "text": "- Living Allowance: €5,080 per month (adjusted by country correction coefficient).\n- Mobility Allowance: €600 per month for all fellows.\n- Family Allowance: €660 per month (if applicable).\n- Research, Training and Networking Costs: €1,000 per month.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "start_date": {
+          "value": null,
+          "evidence": [],
+          "confidence": 0.0,
+          "verification_status": "not_found"
+        },
+        "application_deadline": {
+          "value": "September 10, 2026 at 17:00 Brussels time",
+          "evidence": [
+            {
+              "text": "Application Deadline: September 10, 2026 at 17:00 Brussels time.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "application_url": {
+          "value": "https://ec.europa.eu/info/funding-tenders/opportunities/portal",
+          "evidence": [
+            {
+              "text": "Application URL: https://ec.europa.eu/info/funding-tenders/opportunities/portal",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "required_documents": {
+          "value": [
+            "Proposal Part A (administrative forms)",
+            "Proposal Part B1 and Part B2 (scientific narrative, max 10 pages)",
+            "PhD certificate",
+            "Host Institution Commitment Letter"
+          ],
+          "evidence": [
+            {
+              "text": "Required Documents: Proposal Part A (administrative forms), Proposal Part B1 and Part B2 (scientific narrative, max 10 pages), PhD certificate, Host Institution Commitment Letter.",
+              "locator": {
+                "section": "OPP-M-01-sec1"
+              }
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified"
+        },
+        "document_metadata": {
+          "document_id": "OPP-M-01",
+          "source_type": "PDF",
+          "source_identifier": "https://ec.europa.eu/research/mariecurieactions",
+          "extraction_timestamp": "2026-08-28T03:50:54.417603"
+        }
+      },
+      "field_comparisons": [
+        {
+          "field_name": "title",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "organization",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "opportunity_type",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "education_level",
+          "status_match": true,
+          "value_score": 0.9,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "eligible_disciplines",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "skills_required",
+          "status_match": false,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": true,
+          "missing_info_correct": false,
+          "is_hallucination": true,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "experience_required",
+          "status_match": true,
+          "value_score": 0.9090909090909091,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "eligibility_notes",
+          "status_match": true,
+          "value_score": 0.0,
+          "value_match": false,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "location",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "mode",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "duration",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "stipend_or_funding",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "start_date",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": true,
+          "missing_info_correct": true,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "not_found",
+          "extracted_status": "not_found"
+        },
+        {
+          "field_name": "application_deadline",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "application_url",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        },
+        {
+          "field_name": "required_documents",
+          "status_match": true,
+          "value_score": 1.0,
+          "value_match": true,
+          "is_genuinely_missing": false,
+          "missing_info_correct": false,
+          "is_hallucination": false,
+          "evidence_grounded": true,
+          "expected_status": "verified",
+          "extracted_status": "verified"
+        }
+      ]
+    }
+  ]
+}

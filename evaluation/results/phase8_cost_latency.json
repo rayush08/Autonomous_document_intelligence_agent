@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED_LIVE_CREDENTIAL_FAILURE",
+  "request_upper_bound": 108,
+  "offline_benchmark_latency_avg_sec": 0.015
+}

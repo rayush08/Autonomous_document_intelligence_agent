@@ -1,0 +1,4 @@
+{
+  "request_upper_bound": 108,
+  "retry_policy": "Exponential backoff with random jitter and model failovers"
+}

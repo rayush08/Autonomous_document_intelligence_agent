@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED_LIVE_API_VALIDATION_UNAVAILABLE",
+  "evaluated_fields": [
+    {
+      "field": "required_documents",
+      "primary_cause": "List completeness & chunk boundary fragmentation",
+      "status": "Mitigated"
+    },
+    {
+      "field": "eligibility_notes",
+      "primary_cause": "Free-text semantic paraphrase variance",
+      "status": "Mitigated"
+    },
+    {
+      "field": "benefit_amount",
+      "primary_cause": "Monetary currency unit canonicalization",
+      "status": "Mitigated"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-28T05:26:45Z",
+  "status": "BLOCKED_LIVE_API_VALIDATION_UNAVAILABLE",
+  "api_endpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+  "http_status": 400,
+  "error_reason": "API_KEY_INVALID",
+  "error_message": "API key not valid. Please pass a valid API key.",
+  "live_metrics": "UNAVAILABLE",
+  "unit_test_suite": {
+    "compilation_status": "PASSED (0 syntax errors)",
+    "total_tests": 127,
+    "passed": 126,
+    "skipped": 1,
+    "failed": 0
+  },
+  "offline_benchmark_metrics": {
+    "schema_validity_rate": 1.0,
+    "field_extraction_accuracy": 0.4011764705882353,
+    "verification_status_accuracy": 0.4011764705882353,
+    "missing_information_accuracy": 1.0,
+    "hallucination_rate": 0.0,
+    "evidence_grounding_accuracy": 1.0
+  }
+}
